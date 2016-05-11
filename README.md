@@ -1,30 +1,23 @@
+# Demo of application implementing CRUD, REST, SPA.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+- On the server side Yii2 with ActiveController is used. 
+- On the client side it's AngularJS.
+- For testing I used Codeception (that comes with Yii).
 
+## Client side
 
-Hi there! Welcome to Cloud9 IDE!
+Client app implements typical CRUD using Bootstrap template:
 
-To get you started, we have created a small hello world application.
-
-1) Open the hello-world.php file
-
-2) Follow the run instructions in the file's comments
-
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
-
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
+![client_index.png](/docs/client_index.png "client index")
 
 
-## Support & Documentation
+## Swagger UI
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Shows end points of RESTful interface.
+
+![swagger.png](/docs/swagger.png "swagger")
+
+
+## Server tests
+
+![server_tests.png](/docs/server_tests.png "server tests")
