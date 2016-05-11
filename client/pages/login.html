@@ -1,0 +1,44 @@
+
+<form novalidate class="form-signin" name="signinForm">
+
+<button class="debugButton1" onclick="Debug.fillLoginFieldsAsUser()">Fill fields as user</button>
+
+<button class="debugButton2" onclick="Debug.fillLoginFieldsAsManager()">Fill fields as manager</button>
+
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" name="inputEmail" class="form-control" 
+        placeholder="Email address" required autofocus ng-model="user.user_email">
+        
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" 
+        required name="inputPassword" ng-model="user.user_password">
+        
+        
+    <input type="password" id="inputRetypePassword" class="form-control" 
+        name="inputRetypePassword" ng-model="retypedPassword" placeholder="Retype Password"
+        ng-show="newUserCheckbox" ng-required="newUserCheckbox">
+    
+    <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" 
+        name="inputFirstName" ng-model="user.user_firstname" ng-show="newUserCheckbox" 
+        ng-required="newUserCheckbox">
+    <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" 
+        name="inputLastName" ng-model="user.user_lastname" ng-show="newUserCheckbox" 
+        ng-required="newUserCheckbox">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="newUser" value="new-user" ng-model="newUserCheckbox"> New User
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" 
+        ng-disabled="signinForm.$invalid" ng-click="submit()">Sign in</button>
+
+    <div ng-show="newUserCheckbox && signinForm.inputRetypePassword.$dirty && 
+        retypedPassword!=user.user_password" class="alert alert-danger">
+        <strong>Error:</strong> Passwords do not match.
+    </div>
+        
+    <div ng-show="error" class="alert alert-danger">
+        Error: {{errorMessage}}
+    </div>
+</form>

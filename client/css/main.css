@@ -1,0 +1,107 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+#navbar {
+  margin-left: 20em;
+}
+
+ul.nav.navbar-nav {
+  width: 100%;
+  display: none; /* to prevent displaying {{ }} before Angular is loaded */
+}
+ul.nav.navbar-nav li:last-child {
+  float: right;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.debugButton1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+.debugButton2 {
+  position: fixed;
+  top: 3em;
+  right: 0;
+  z-index: 10000;
+}
+
+
+.alert {
+  margin-top: 1em;
+}
+
+
+.crud form {
+  display: inline;
+}
+
+tr.exceeded {
+  background-color: Coral;
+}
+
+tr.normal {
+  background-color: Lime;
+}
+
+.filter-row {
+  padding: 0;
+  margin-top: 0.5em;
+}
+
+.filter-row label {
+  margin: 0 1.5em 0 0;
+}
+
+#filterButton, #clearFilterButton {
+  float: left;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.table.crud th.action {
+  width: 12em;
+}
+
+.datepicker {
+  width: 6em;
+}

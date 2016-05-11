@@ -1,0 +1,3 @@
+[26-Apr-2016 00:31:16 UTC] PHP Fatal error:  Class 'yii\rest\ActiveController' not found in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 17
+[26-Apr-2016 00:31:16 UTC] PHP Stack trace:
+[26-Apr-2016 00:31:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php:0

@@ -1,0 +1,66 @@
+
+<h3>Calories for {{CurrentUser.user_firstname}} {{CurrentUser.user_lastname}}</h3>
+
+<button id="createButton" class="btn btn-sm btn-success pull-left" ng-click="update(null)">Create New Record</button>
+{{CurentUser.user_id}}
+<div class="col-sm-12 filter-row">
+		<button id="filterButton" class="btn btn-primary" ng-click="filter()">Filter</button>
+		<button id="clearFilterButton" class="btn btn-primary" ng-click="clearFilter()">Clear</button>
+		<label>
+			From date:
+				<input type="text" ng-model="filterParams.fromDate" datepicker class="datepicker" />
+		</label>
+		
+		<label>
+			To date: 
+			<input type="text" ng-model="filterParams.toDate" datepicker class="datepicker" />
+		</label>
+		
+		<label>
+			From time: <input type="text" size="5" maxlength="5" 
+				ng-model="filterParams.fromTime" ng-init="filterParams.fromTime='09:00'" />
+		</label>
+		
+		<label>	
+			To time: <input type="text" size="5" maxlength="5" value="21:00" 
+				ng-model="filterParams.toTime" ng-init="filterParams.toTime='21:00'" />
+		</label>
+</div>
+
+<table class="table crud">
+	<thead>
+		<tr>
+			<th class="action">Action</th>
+			<th>{{caloriesLabelList.calories_id}}</th>
+			<th>{{caloriesLabelList.calories_datetime}}</th>
+			<th>{{caloriesLabelList.calories_number}}</th>
+			<th>{{caloriesLabelList.calories_text}}</th>
+		</tr>
+
+		<tr ng-repeat="calories in caloriesList" 
+		    ng-class="calories.exceededLimit?'exceeded' : 'normal'">
+
+			<td>
+				<button class="btn btn-xs btn-info" ng-click="read(calories.calories_id)">
+				    Review
+				</button>
+
+				<button class="btn btn-xs btn-warning" ng-click="update(calories.calories_id)">
+				    Edit
+				</button>
+
+				<button class="btn btn-xs btn-danger" ng-click="delete(calories.calories_id)">
+				    Delete
+				</button>
+			</td>
+			
+			<td class="text-left">{{calories.calories_id}}</td>
+			<td class="text-left">{{calories.calories_datetime}}</td>
+			<td class="text-left">{{calories.calories_number}}</td>
+			<td class="text-left">{{calories.calories_text}}</td>
+			
+
+		</tr>
+	</thead>
+</table>
+

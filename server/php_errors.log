@@ -1,0 +1,1513 @@
+[06-Apr-2016 16:44:21 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\UnauthorizedHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 17
+[06-Apr-2016 16:44:21 UTC] PHP Stack trace:
+[06-Apr-2016 16:44:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 16:44:21 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 16:44:21 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 16:44:21 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 16:44:21 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 16:44:21 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 16:44:21 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 16:44:21 UTC] PHP   8. yii\rest\IndexAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 16:44:21 UTC] PHP   9. call_user_func:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[06-Apr-2016 16:44:21 UTC] PHP  10. app\modules\v1\controllers\UserController->checkAccess() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[06-Apr-2016 17:00:54 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\Response' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 17
+[06-Apr-2016 17:00:54 UTC] PHP Stack trace:
+[06-Apr-2016 17:00:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 17:00:54 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 17:00:54 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 17:00:54 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 17:00:54 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[06-Apr-2016 17:00:54 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[06-Apr-2016 17:00:54 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[06-Apr-2016 17:00:54 UTC] PHP   8. yii\BaseYii::createObject() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:567
+[06-Apr-2016 17:00:54 UTC] PHP   9. yii\di\Container->get() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:340
+[06-Apr-2016 17:00:54 UTC] PHP  10. yii\di\Container->build() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/di/Container.php:153
+[06-Apr-2016 17:00:54 UTC] PHP  11. ReflectionClass->newInstanceArgs() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/di/Container.php:368
+[06-Apr-2016 17:00:54 UTC] PHP  12. yii\base\Controller->__construct() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/di/Container.php:368
+[06-Apr-2016 17:00:54 UTC] PHP  13. yii\base\Object->__construct() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:84
+[06-Apr-2016 17:00:54 UTC] PHP  14. app\modules\v1\controllers\UserController->init() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Object.php:107
+[06-Apr-2016 17:01:17 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\Yii' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 17
+[06-Apr-2016 17:01:17 UTC] PHP Stack trace:
+[06-Apr-2016 17:01:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 17:01:17 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 17:01:17 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 17:01:17 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 17:01:17 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[06-Apr-2016 17:01:17 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[06-Apr-2016 17:01:17 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[06-Apr-2016 17:01:17 UTC] PHP   8. yii\BaseYii::createObject() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:567
+[06-Apr-2016 17:01:17 UTC] PHP   9. yii\di\Container->get() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:340
+[06-Apr-2016 17:01:17 UTC] PHP  10. yii\di\Container->build() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/di/Container.php:153
+[06-Apr-2016 17:01:17 UTC] PHP  11. ReflectionClass->newInstanceArgs() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/di/Container.php:368
+[06-Apr-2016 17:01:17 UTC] PHP  12. yii\base\Controller->__construct() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/di/Container.php:368
+[06-Apr-2016 17:01:17 UTC] PHP  13. yii\base\Object->__construct() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:84
+[06-Apr-2016 17:01:17 UTC] PHP  14. app\modules\v1\controllers\UserController->init() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Object.php:107
+[06-Apr-2016 17:02:34 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\ArrayHelper' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 33
+[06-Apr-2016 17:02:34 UTC] PHP Stack trace:
+[06-Apr-2016 17:02:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 17:02:34 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 17:02:34 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 17:02:34 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 17:02:34 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 17:02:34 UTC] PHP   6. yii\web\Controller->beforeAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:152
+[06-Apr-2016 17:02:34 UTC] PHP   7. yii\base\Controller->beforeAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Controller.php:108
+[06-Apr-2016 17:02:34 UTC] PHP   8. yii\base\Component->trigger() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:269
+[06-Apr-2016 17:02:34 UTC] PHP   9. yii\base\Component->ensureBehaviors() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Component.php:529
+[06-Apr-2016 17:02:34 UTC] PHP  10. app\modules\v1\controllers\UserController->behaviors() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Component.php:646
+[06-Apr-2016 17:50:02 UTC] PHP Fatal error:  Class 'app\models\SimpleActiveRecord' not found in /home/ubuntu/workspace/server/models/User.php on line 9
+[06-Apr-2016 17:50:02 UTC] PHP Stack trace:
+[06-Apr-2016 17:50:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 17:50:02 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 17:50:02 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 17:50:02 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 17:50:02 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 17:50:02 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 17:50:02 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 17:50:02 UTC] PHP   8. yii\rest\CreateAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 17:50:02 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 17:50:02 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 17:50:02 UTC] PHP  11. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[06-Apr-2016 18:11:04 UTC] PHP Warning:  Uncaught exception 'yii\base\ErrorException' with message 'require_once(/home/ubuntu/workspace/server/models../vendor/SimpleActiveRecord/src/SimpleActiveRecord.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/server/models/User.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php(45): yii\BaseYii::autoload()
+#1 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php(45): ::spl_autoload_call()
+#2 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php(92): yii\rest\CreateAction->run()
+#3 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php(92): ::call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}()
+#4 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams()
+#5 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#6 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/ in /home/ubuntu/workspace/server/models/User.php on line 7
+[06-Apr-2016 18:11:04 UTC] PHP Stack trace:
+[06-Apr-2016 18:11:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 18:11:04 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 18:11:04 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 18:11:04 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 18:11:04 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 18:11:04 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 18:11:04 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 18:11:04 UTC] PHP   8. yii\rest\CreateAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 18:11:04 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 18:11:04 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 18:11:04 UTC] PHP  11. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[06-Apr-2016 18:11:04 UTC] PHP Fatal error:  main(): Failed opening required '/home/ubuntu/workspace/server/models../vendor/SimpleActiveRecord/src/SimpleActiveRecord.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/models/User.php on line 7
+[06-Apr-2016 18:11:04 UTC] PHP Stack trace:
+[06-Apr-2016 18:11:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 18:11:04 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 18:11:04 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 18:11:04 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 18:11:04 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 18:11:04 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 18:11:04 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 18:11:04 UTC] PHP   8. yii\rest\CreateAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 18:11:04 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 18:11:04 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 18:11:04 UTC] PHP  11. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[06-Apr-2016 18:11:20 UTC] PHP Fatal error:  Class 'app\models\SimpleActiveRecord' not found in /home/ubuntu/workspace/server/models/User.php on line 11
+[06-Apr-2016 18:11:20 UTC] PHP Stack trace:
+[06-Apr-2016 18:11:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 18:11:20 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 18:11:20 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 18:11:20 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 18:11:20 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 18:11:20 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 18:11:20 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 18:11:20 UTC] PHP   8. yii\rest\CreateAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[06-Apr-2016 18:11:20 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 18:11:20 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:45
+[06-Apr-2016 18:11:20 UTC] PHP  11. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[06-Apr-2016 19:25:47 UTC] PHP Fatal error:  Class 'app\models\OAuthProvider' not found in /home/ubuntu/workspace/server/models/User.php on line 20
+[06-Apr-2016 19:25:47 UTC] PHP Stack trace:
+[06-Apr-2016 19:25:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 19:25:47 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 19:25:47 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 19:25:47 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 19:25:47 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 19:25:47 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 19:25:47 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 19:25:47 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 19:25:47 UTC] PHP   9. app\models\User->createAccessToken() /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php:63
+[06-Apr-2016 19:47:13 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\HttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 68
+[06-Apr-2016 19:47:13 UTC] PHP Stack trace:
+[06-Apr-2016 19:47:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 19:47:13 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 19:47:13 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 19:47:13 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 19:47:13 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 19:47:13 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 19:47:13 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 19:47:13 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 19:49:38 UTC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/HttpException.php on line 48
+[06-Apr-2016 19:49:38 UTC] PHP Stack trace:
+[06-Apr-2016 19:49:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 19:49:38 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 19:49:38 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 19:49:38 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 19:49:38 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 19:49:38 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 19:49:38 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 19:49:38 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 19:49:38 UTC] PHP   9. yii\web\UnprocessableEntityHttpException->__construct() /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php:69
+[06-Apr-2016 19:49:38 UTC] PHP  10. yii\web\HttpException->__construct() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/UnprocessableEntityHttpException.php:33
+[06-Apr-2016 19:49:38 UTC] PHP  11. Exception->__construct() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/HttpException.php:48
+[06-Apr-2016 21:16:22 UTC] PHP Fatal error:  Call to undefined function app\models\loginExistingUser() in /home/ubuntu/workspace/server/models/User.php on line 17
+[06-Apr-2016 21:16:22 UTC] PHP Stack trace:
+[06-Apr-2016 21:16:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 21:16:22 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 21:16:22 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 21:16:22 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 21:16:22 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 21:16:22 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 21:16:22 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 21:16:22 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 21:16:22 UTC] PHP   9. app\models\User->signin() /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php:62
+[06-Apr-2016 21:16:41 UTC] PHP Fatal error:  Class 'app\models\UnauthorizedHttpException' not found in /home/ubuntu/workspace/server/models/User.php on line 31
+[06-Apr-2016 21:16:41 UTC] PHP Stack trace:
+[06-Apr-2016 21:16:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[06-Apr-2016 21:16:41 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[06-Apr-2016 21:16:41 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[06-Apr-2016 21:16:41 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[06-Apr-2016 21:16:41 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[06-Apr-2016 21:16:41 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[06-Apr-2016 21:16:41 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 21:16:41 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[06-Apr-2016 21:16:41 UTC] PHP   9. app\models\User->signin() /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php:62
+[06-Apr-2016 21:16:41 UTC] PHP  10. app\models\User->loginExistingUser() /home/ubuntu/workspace/server/models/User.php:17
+[07-Apr-2016 17:00:59 UTC] PHP Fatal error:  Class 'app\models\UnprocessableEntityHttpException' not found in /home/ubuntu/workspace/server/models/User.php on line 55
+[07-Apr-2016 17:00:59 UTC] PHP Stack trace:
+[07-Apr-2016 17:00:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[07-Apr-2016 17:00:59 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[07-Apr-2016 17:00:59 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[07-Apr-2016 17:00:59 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[07-Apr-2016 17:00:59 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[07-Apr-2016 17:00:59 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[07-Apr-2016 17:00:59 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-Apr-2016 17:00:59 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-Apr-2016 17:00:59 UTC] PHP   9. app\models\User->signin() /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php:56
+[07-Apr-2016 17:00:59 UTC] PHP  10. app\models\User->createNewUser() /home/ubuntu/workspace/server/models/User.php:23
+[07-Apr-2016 17:02:35 UTC] PHP Fatal error:  Class 'app\models\UnprocessableEntityHttpException' not found in /home/ubuntu/workspace/server/models/User.php on line 55
+[07-Apr-2016 17:02:35 UTC] PHP Stack trace:
+[07-Apr-2016 17:02:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[07-Apr-2016 17:02:35 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[07-Apr-2016 17:02:35 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[07-Apr-2016 17:02:35 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[07-Apr-2016 17:02:35 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[07-Apr-2016 17:02:35 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[07-Apr-2016 17:02:35 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-Apr-2016 17:02:35 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-Apr-2016 17:02:35 UTC] PHP   9. app\models\User->signin() /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php:56
+[07-Apr-2016 17:02:35 UTC] PHP  10. app\models\User->createNewUser() /home/ubuntu/workspace/server/models/User.php:23
+[07-Apr-2016 17:04:04 UTC] PHP Fatal error:  Call to a member function getErrors() on a non-object in /home/ubuntu/workspace/server/models/User.php on line 57
+[07-Apr-2016 17:04:04 UTC] PHP Stack trace:
+[07-Apr-2016 17:04:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[07-Apr-2016 17:04:04 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[07-Apr-2016 17:04:04 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[07-Apr-2016 17:04:04 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[07-Apr-2016 17:04:04 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[07-Apr-2016 17:04:04 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[07-Apr-2016 17:04:04 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-Apr-2016 17:04:04 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-Apr-2016 17:04:04 UTC] PHP   9. app\models\User->signin() /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php:56
+[07-Apr-2016 17:04:04 UTC] PHP  10. app\models\User->createNewUser() /home/ubuntu/workspace/server/models/User.php:25
+[08-Apr-2016 00:59:05 UTC] PHP Fatal error:  Call to undefined method Yii::app() in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 42
+[08-Apr-2016 00:59:05 UTC] PHP Stack trace:
+[08-Apr-2016 00:59:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[08-Apr-2016 00:59:05 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[08-Apr-2016 00:59:05 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[08-Apr-2016 00:59:05 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[08-Apr-2016 00:59:05 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[08-Apr-2016 00:59:05 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[08-Apr-2016 00:59:05 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[08-Apr-2016 00:59:05 UTC] PHP   8. app\modules\v1\controllers\CaloriesController->actionUser() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[08-Apr-2016 01:20:06 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\Calories' not found in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 52
+[08-Apr-2016 01:20:06 UTC] PHP Stack trace:
+[08-Apr-2016 01:20:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[08-Apr-2016 01:20:06 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[08-Apr-2016 01:20:06 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[08-Apr-2016 01:20:06 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[08-Apr-2016 01:20:06 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[08-Apr-2016 01:20:06 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[08-Apr-2016 01:20:06 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[08-Apr-2016 01:20:06 UTC] PHP   8. app\modules\v1\controllers\CaloriesController->actionUser() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[08-Apr-2016 01:21:28 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\Response' not found in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 26
+[08-Apr-2016 01:21:28 UTC] PHP Stack trace:
+[08-Apr-2016 01:21:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[08-Apr-2016 01:21:28 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[08-Apr-2016 01:21:28 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[08-Apr-2016 01:21:28 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[08-Apr-2016 01:21:28 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[08-Apr-2016 01:21:28 UTC] PHP   6. yii\web\Controller->beforeAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:152
+[08-Apr-2016 01:21:28 UTC] PHP   7. yii\base\Controller->beforeAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Controller.php:108
+[08-Apr-2016 01:21:28 UTC] PHP   8. yii\base\Component->trigger() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:269
+[08-Apr-2016 01:21:28 UTC] PHP   9. yii\base\Component->ensureBehaviors() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Component.php:529
+[08-Apr-2016 01:21:28 UTC] PHP  10. app\modules\v1\controllers\CaloriesController->behaviors() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Component.php:646
+[08-Apr-2016 01:21:32 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\Yii' not found in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 51
+[08-Apr-2016 01:21:32 UTC] PHP Stack trace:
+[08-Apr-2016 01:21:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[08-Apr-2016 01:21:32 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[08-Apr-2016 01:21:32 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[08-Apr-2016 01:21:32 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[08-Apr-2016 01:21:32 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[08-Apr-2016 01:21:32 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[08-Apr-2016 01:21:32 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[08-Apr-2016 01:21:32 UTC] PHP   8. app\modules\v1\controllers\CaloriesController->actionUser() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[09-Apr-2016 18:17:00 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/server/controllers/TestController.php on line 18
+[09-Apr-2016 18:17:00 UTC] PHP Stack trace:
+[09-Apr-2016 18:17:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[09-Apr-2016 18:17:00 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[09-Apr-2016 18:17:00 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[09-Apr-2016 18:17:00 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[09-Apr-2016 18:17:00 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[09-Apr-2016 18:17:00 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[09-Apr-2016 18:17:00 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[09-Apr-2016 18:17:00 UTC] PHP   8. app\controllers\TestController->actionDatabase() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[09-Apr-2016 18:38:01 UTC] PHP Fatal error:  Class 'app\controllers\User' not found in /home/ubuntu/workspace/server/controllers/TestController.php on line 19
+[09-Apr-2016 18:38:01 UTC] PHP Stack trace:
+[09-Apr-2016 18:38:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[09-Apr-2016 18:38:01 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[09-Apr-2016 18:38:01 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[09-Apr-2016 18:38:01 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[09-Apr-2016 18:38:01 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[09-Apr-2016 18:38:01 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[09-Apr-2016 18:38:01 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[09-Apr-2016 18:38:01 UTC] PHP   8. app\controllers\TestController->actionDatabase() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[09-Apr-2016 20:10:54 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\ForbiddenHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 22
+[09-Apr-2016 20:10:54 UTC] PHP Stack trace:
+[09-Apr-2016 20:10:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[09-Apr-2016 20:10:54 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[09-Apr-2016 20:10:54 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[09-Apr-2016 20:10:54 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[09-Apr-2016 20:10:54 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[09-Apr-2016 20:10:54 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[09-Apr-2016 20:10:54 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 20:10:54 UTC] PHP   8. yii\rest\IndexAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 20:10:54 UTC] PHP   9. call_user_func:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[09-Apr-2016 20:10:54 UTC] PHP  10. app\modules\v1\controllers\UserController->checkAccess() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[09-Apr-2016 20:11:15 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\ForbiddenHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 22
+[09-Apr-2016 20:11:15 UTC] PHP Stack trace:
+[09-Apr-2016 20:11:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[09-Apr-2016 20:11:15 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[09-Apr-2016 20:11:15 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[09-Apr-2016 20:11:15 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[09-Apr-2016 20:11:15 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[09-Apr-2016 20:11:15 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[09-Apr-2016 20:11:15 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 20:11:15 UTC] PHP   8. yii\rest\IndexAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 20:11:15 UTC] PHP   9. call_user_func:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[09-Apr-2016 20:11:15 UTC] PHP  10. app\modules\v1\controllers\UserController->checkAccess() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[09-Apr-2016 23:13:55 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\ForbiddenHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 22
+[09-Apr-2016 23:13:55 UTC] PHP Stack trace:
+[09-Apr-2016 23:13:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[09-Apr-2016 23:13:55 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[09-Apr-2016 23:13:55 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[09-Apr-2016 23:13:55 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[09-Apr-2016 23:13:55 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[09-Apr-2016 23:13:55 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[09-Apr-2016 23:13:55 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 23:13:55 UTC] PHP   8. yii\rest\IndexAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 23:13:55 UTC] PHP   9. call_user_func:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[09-Apr-2016 23:13:55 UTC] PHP  10. app\modules\v1\controllers\UserController->checkAccess() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[09-Apr-2016 23:19:29 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\ForbiddenHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 22
+[09-Apr-2016 23:19:29 UTC] PHP Stack trace:
+[09-Apr-2016 23:19:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[09-Apr-2016 23:19:29 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[09-Apr-2016 23:19:29 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[09-Apr-2016 23:19:29 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[09-Apr-2016 23:19:29 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[09-Apr-2016 23:19:29 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[09-Apr-2016 23:19:29 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 23:19:29 UTC] PHP   8. yii\rest\ViewAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[09-Apr-2016 23:19:29 UTC] PHP   9. call_user_func:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/ViewAction.php:29}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/ViewAction.php:29
+[09-Apr-2016 23:19:29 UTC] PHP  10. app\modules\v1\controllers\UserController->checkAccess() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/ViewAction.php:29
+[10-Apr-2016 02:21:56 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/server/models/User.php on line 26
+[10-Apr-2016 02:21:56 UTC] PHP Stack trace:
+[10-Apr-2016 02:21:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-Apr-2016 02:21:56 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[10-Apr-2016 02:21:56 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[10-Apr-2016 02:21:56 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[10-Apr-2016 02:21:56 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[10-Apr-2016 02:21:56 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[10-Apr-2016 02:21:56 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[10-Apr-2016 02:21:56 UTC] PHP   8. app\modules\v1\controllers\UserController->actionLabels() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[10-Apr-2016 02:21:56 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:74
+[10-Apr-2016 02:21:56 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:74
+[12-Apr-2016 19:13:26 UTC] PHP Fatal error:  Call to a member function orderBy() on a non-object in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 53
+[12-Apr-2016 19:13:26 UTC] PHP Stack trace:
+[12-Apr-2016 19:13:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 19:13:26 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 19:13:26 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 19:13:26 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 19:13:26 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[12-Apr-2016 19:13:26 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[12-Apr-2016 19:13:26 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 19:13:26 UTC] PHP   8. app\modules\v1\controllers\CaloriesController->actionUser() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 19:16:35 UTC] PHP Fatal error:  Call to a member function orderBy() on a non-object in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 54
+[12-Apr-2016 19:16:35 UTC] PHP Stack trace:
+[12-Apr-2016 19:16:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 19:16:35 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 19:16:35 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 19:16:35 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 19:16:35 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[12-Apr-2016 19:16:35 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[12-Apr-2016 19:16:35 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 19:16:35 UTC] PHP   8. app\modules\v1\controllers\CaloriesController->actionUser() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 21:58:49 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\DBCriteria' not found in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 76
+[12-Apr-2016 21:58:49 UTC] PHP Stack trace:
+[12-Apr-2016 21:58:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 21:58:49 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 21:58:49 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 21:58:49 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 21:58:49 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[12-Apr-2016 21:58:49 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[12-Apr-2016 21:58:49 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 21:58:49 UTC] PHP   8. app\modules\v1\controllers\CaloriesController->actionSearch() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 23:49:36 UTC] PHP Fatal error:  Class declarations may not be nested in /home/ubuntu/workspace/server/controllers/TestController.php on line 33
+[12-Apr-2016 23:49:36 UTC] PHP Stack trace:
+[12-Apr-2016 23:49:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:49:36 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:49:36 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:49:36 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:49:36 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[12-Apr-2016 23:49:36 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[12-Apr-2016 23:49:36 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:49:36 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:49:36 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:53:29 UTC] PHP Fatal error:  Class 'app\controllers\RESTtests' not found in /home/ubuntu/workspace/server/controllers/TestController.php on line 30
+[12-Apr-2016 23:53:29 UTC] PHP Stack trace:
+[12-Apr-2016 23:53:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:53:29 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:53:29 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:53:29 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:53:29 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[12-Apr-2016 23:53:29 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[12-Apr-2016 23:53:29 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 23:53:29 UTC] PHP   8. app\controllers\TestController->actionServer() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 23:54:20 UTC] PHP Warning:  Uncaught exception 'yii\base\ErrorException' with message 'require_once(simpletest/autorun.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/server/tests/RESTtests.php:3
+Stack trace:
+#0 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php(288): ::unknown()
+#1 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(562): yii\BaseYii::autoload()
+#2 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(562): ::spl_autoload_call()
+#3 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(562): ::class_exists()
+#4 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID()
+#5 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController()
+#6 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#7 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->hand in /home/ubuntu/workspace/server/tests/RESTtests.php on line 3
+[12-Apr-2016 23:54:20 UTC] PHP Stack trace:
+[12-Apr-2016 23:54:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:54:20 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:54:20 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:54:20 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:54:20 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[12-Apr-2016 23:54:20 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[12-Apr-2016 23:54:20 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:20 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:20 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:20 UTC] PHP  10. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[12-Apr-2016 23:54:20 UTC] PHP  11. require() /home/ubuntu/workspace/server/controllers/TestController.php:14
+[12-Apr-2016 23:54:20 UTC] PHP Fatal error:  main(): Failed opening required 'simpletest/autorun.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/tests/RESTtests.php on line 3
+[12-Apr-2016 23:54:20 UTC] PHP Stack trace:
+[12-Apr-2016 23:54:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:54:20 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:54:20 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:54:20 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:54:20 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[12-Apr-2016 23:54:20 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[12-Apr-2016 23:54:20 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:20 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:20 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:20 UTC] PHP  10. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[12-Apr-2016 23:54:20 UTC] PHP  11. require() /home/ubuntu/workspace/server/controllers/TestController.php:14
+[12-Apr-2016 23:54:49 UTC] PHP Warning:  Uncaught exception 'yii\base\ErrorException' with message 'require_once(simpletest/web_tester.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/server/tests/RESTtests.php:4
+Stack trace:
+#0 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php(288): ::unknown()
+#1 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(562): yii\BaseYii::autoload()
+#2 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(562): ::spl_autoload_call()
+#3 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(562): ::class_exists()
+#4 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID()
+#5 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController()
+#6 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#7 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->h in /home/ubuntu/workspace/server/tests/RESTtests.php on line 4
+[12-Apr-2016 23:54:49 UTC] PHP Stack trace:
+[12-Apr-2016 23:54:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:54:49 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:54:49 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:54:49 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:54:49 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[12-Apr-2016 23:54:49 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[12-Apr-2016 23:54:49 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:49 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:49 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:49 UTC] PHP  10. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[12-Apr-2016 23:54:49 UTC] PHP  11. require() /home/ubuntu/workspace/server/controllers/TestController.php:14
+[12-Apr-2016 23:54:49 UTC] PHP Fatal error:  main(): Failed opening required 'simpletest/web_tester.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/tests/RESTtests.php on line 4
+[12-Apr-2016 23:54:49 UTC] PHP Stack trace:
+[12-Apr-2016 23:54:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:54:49 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:54:49 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:54:49 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:54:49 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[12-Apr-2016 23:54:49 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[12-Apr-2016 23:54:49 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:49 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:49 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[12-Apr-2016 23:54:49 UTC] PHP  10. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[12-Apr-2016 23:54:49 UTC] PHP  11. require() /home/ubuntu/workspace/server/controllers/TestController.php:14
+[12-Apr-2016 23:54:57 UTC] PHP Fatal error:  Class 'app\controllers\RESTtests' not found in /home/ubuntu/workspace/server/controllers/TestController.php on line 34
+[12-Apr-2016 23:54:57 UTC] PHP Stack trace:
+[12-Apr-2016 23:54:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:54:57 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:54:57 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:54:57 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:54:57 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[12-Apr-2016 23:54:57 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[12-Apr-2016 23:54:57 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 23:54:57 UTC] PHP   8. app\controllers\TestController->actionServer() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 23:57:06 UTC] PHP Fatal error:  Class 'app\controllers\RESTtests' not found in /home/ubuntu/workspace/server/controllers/TestController.php on line 34
+[12-Apr-2016 23:57:06 UTC] PHP Stack trace:
+[12-Apr-2016 23:57:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[12-Apr-2016 23:57:06 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[12-Apr-2016 23:57:06 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[12-Apr-2016 23:57:06 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[12-Apr-2016 23:57:06 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[12-Apr-2016 23:57:06 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[12-Apr-2016 23:57:06 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[12-Apr-2016 23:57:06 UTC] PHP   8. app\controllers\TestController->actionServer() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 00:10:28 UTC] PHP Fatal error:  Call to undefined method Yii::app() in /home/ubuntu/workspace/server/controllers/TestController.php on line 33
+[13-Apr-2016 00:10:28 UTC] PHP Stack trace:
+[13-Apr-2016 00:10:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[13-Apr-2016 00:10:28 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[13-Apr-2016 00:10:28 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[13-Apr-2016 00:10:28 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[13-Apr-2016 00:10:28 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[13-Apr-2016 00:10:28 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[13-Apr-2016 00:10:28 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 00:10:28 UTC] PHP   8. app\controllers\TestController->actionServer() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 00:10:35 UTC] PHP Fatal error:  Call to undefined method Yii::app() in /home/ubuntu/workspace/server/controllers/TestController.php on line 33
+[13-Apr-2016 00:10:35 UTC] PHP Stack trace:
+[13-Apr-2016 00:10:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[13-Apr-2016 00:10:35 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[13-Apr-2016 00:10:35 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[13-Apr-2016 00:10:35 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[13-Apr-2016 00:10:35 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[13-Apr-2016 00:10:35 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[13-Apr-2016 00:10:35 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 00:10:35 UTC] PHP   8. app\controllers\TestController->actionServer() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 00:10:39 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/server/controllers/TestController.php on line 33
+[13-Apr-2016 00:10:39 UTC] PHP Stack trace:
+[13-Apr-2016 00:10:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[13-Apr-2016 00:10:39 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[13-Apr-2016 00:10:39 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[13-Apr-2016 00:10:39 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[13-Apr-2016 00:10:39 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[13-Apr-2016 00:10:39 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[13-Apr-2016 00:10:39 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 00:10:39 UTC] PHP   8. app\controllers\TestController->actionServer() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 00:13:34 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/server/controllers/TestController.php on line 34
+[13-Apr-2016 00:13:34 UTC] PHP Stack trace:
+[13-Apr-2016 00:13:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[13-Apr-2016 00:13:34 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[13-Apr-2016 00:13:34 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[13-Apr-2016 00:13:34 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[13-Apr-2016 00:13:34 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[13-Apr-2016 00:13:34 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[13-Apr-2016 00:13:34 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[13-Apr-2016 00:13:34 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[13-Apr-2016 00:13:34 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[13-Apr-2016 00:17:48 UTC] PHP Fatal error:  Class 'APIURL' not found in /home/ubuntu/workspace/server/tests/RESTtests.php on line 10
+[13-Apr-2016 00:17:48 UTC] PHP Stack trace:
+[13-Apr-2016 00:17:48 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:17:48 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:17:48 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:17:48 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:17:48 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:17:48 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:17:48 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:17:48 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:17:48 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:17:48 UTC] PHP  10. RESTtests->testUserLabels() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:18:02 UTC] PHP Fatal error:  Class 'APIURL' not found in /home/ubuntu/workspace/server/tests/RESTtests.php on line 10
+[13-Apr-2016 00:18:02 UTC] PHP Stack trace:
+[13-Apr-2016 00:18:02 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:18:02 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:18:02 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:18:02 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:18:02 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:18:02 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:18:02 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:18:02 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:18:02 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:18:02 UTC] PHP  10. RESTtests->testUserLabels() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:18:54 UTC] PHP Fatal error:  Class 'APIURL' not found in /home/ubuntu/workspace/server/tests/RESTtests.php on line 10
+[13-Apr-2016 00:18:54 UTC] PHP Stack trace:
+[13-Apr-2016 00:18:54 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:18:54 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:18:54 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:18:54 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:18:54 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:18:54 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:18:54 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:18:54 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:18:54 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:18:54 UTC] PHP  10. RESTtests->testUserLabels() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:18:55 UTC] PHP Fatal error:  Class 'APIURL' not found in /home/ubuntu/workspace/server/tests/RESTtests.php on line 10
+[13-Apr-2016 00:18:55 UTC] PHP Stack trace:
+[13-Apr-2016 00:18:55 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:18:55 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:18:55 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:18:55 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:18:55 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:18:55 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:18:55 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:18:55 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:18:55 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:18:55 UTC] PHP  10. RESTtests->testUserLabels() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:19:22 UTC] PHP Fatal error:  Class 'APIURL' not found in /home/ubuntu/workspace/server/tests/RESTtests.php on line 10
+[13-Apr-2016 00:19:22 UTC] PHP Stack trace:
+[13-Apr-2016 00:19:22 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:19:22 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:19:22 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:19:22 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:19:22 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:19:22 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:19:22 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:19:22 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:19:22 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:19:22 UTC] PHP  10. RESTtests->testUserLabels() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:19:23 UTC] PHP Fatal error:  Class 'APIURL' not found in /home/ubuntu/workspace/server/tests/RESTtests.php on line 10
+[13-Apr-2016 00:19:23 UTC] PHP Stack trace:
+[13-Apr-2016 00:19:23 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:19:23 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:19:23 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:19:23 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:19:23 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:19:23 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:19:23 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:19:23 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:19:23 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:19:23 UTC] PHP  10. RESTtests->testUserLabels() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:20:27 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/ubuntu/workspace/server/controllers/TestController.php on line 6
+[13-Apr-2016 00:20:27 UTC] PHP Stack trace:
+[13-Apr-2016 00:20:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[13-Apr-2016 00:20:27 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:12
+[13-Apr-2016 00:20:27 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[13-Apr-2016 00:20:27 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[13-Apr-2016 00:20:27 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[13-Apr-2016 00:20:27 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[13-Apr-2016 00:20:27 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[13-Apr-2016 00:20:27 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[13-Apr-2016 00:20:27 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[13-Apr-2016 00:20:41 UTC] E_WARNING: fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/server/vendor/simpletest/socket.php on line 255
+[13-Apr-2016 00:21:20 UTC] E_WARNING: fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/server/vendor/simpletest/socket.php on line 255
+[13-Apr-2016 00:32:00 UTC] PHP Fatal error:  Call to undefined method APIURL::getUserUrl() in /home/ubuntu/workspace/server/tests/RESTtests.php on line 31
+[13-Apr-2016 00:32:00 UTC] PHP Stack trace:
+[13-Apr-2016 00:32:00 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:32:00 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:32:00 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:32:00 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:32:00 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:32:00 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:32:00 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:32:00 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:32:00 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:32:00 UTC] PHP  10. RESTtests->testLogin() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:40:38 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/server/tests/RESTtests.php on line 40
+[13-Apr-2016 00:40:38 UTC] PHP Stack trace:
+[13-Apr-2016 00:40:38 UTC] PHP   1. simpletest_autorun() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:0
+[13-Apr-2016 00:40:38 UTC] PHP   2. run_local_tests() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:30
+[13-Apr-2016 00:40:38 UTC] PHP   3. TestSuite->run() /home/ubuntu/workspace/server/vendor/simpletest/autorun.php:54
+[13-Apr-2016 00:40:38 UTC] PHP   4. SimpleTestCase->run() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:560
+[13-Apr-2016 00:40:38 UTC] PHP   5. SimpleErrorTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/test_case.php:144
+[13-Apr-2016 00:40:38 UTC] PHP   6. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/errors.php:42
+[13-Apr-2016 00:40:38 UTC] PHP   7. SimpleExceptionTrappingInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:40:38 UTC] PHP   8. SimpleInvokerDecorator->invoke() /home/ubuntu/workspace/server/vendor/simpletest/exceptions.php:43
+[13-Apr-2016 00:40:38 UTC] PHP   9. SimpleInvoker->invoke() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:126
+[13-Apr-2016 00:40:38 UTC] PHP  10. RESTtests->testLogin() /home/ubuntu/workspace/server/vendor/simpletest/invoker.php:68
+[13-Apr-2016 00:58:39 UTC] E_NOTICE: Undefined variable: resultObj in /home/ubuntu/workspace/server/tests/RESTtests.php on line 70
+[13-Apr-2016 01:12:48 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\UnauthorizedHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 24
+[13-Apr-2016 01:12:48 UTC] PHP Stack trace:
+[13-Apr-2016 01:12:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[13-Apr-2016 01:12:48 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[13-Apr-2016 01:12:48 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[13-Apr-2016 01:12:48 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[13-Apr-2016 01:12:48 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[13-Apr-2016 01:12:48 UTC] PHP   6. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[13-Apr-2016 01:12:48 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[13-Apr-2016 01:12:48 UTC] PHP   8. yii\rest\IndexAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[13-Apr-2016 01:12:48 UTC] PHP   9. call_user_func:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[13-Apr-2016 01:12:48 UTC] PHP  10. app\modules\v1\controllers\UserController->checkAccess() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/rest/IndexAction.php:41
+[13-Apr-2016 01:27:56 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\UnauthorizedHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php on line 35
+[13-Apr-2016 01:27:56 UTC] PHP Stack trace:
+[13-Apr-2016 01:27:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[13-Apr-2016 01:27:56 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[13-Apr-2016 01:27:56 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[13-Apr-2016 01:27:56 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[13-Apr-2016 01:27:56 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[13-Apr-2016 01:27:56 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[13-Apr-2016 01:27:56 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 01:27:56 UTC] PHP   8. app\modules\v1\controllers\CaloriesController->actionUser() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[13-Apr-2016 01:27:56 UTC] PHP   9. app\modules\v1\controllers\CaloriesController->checkAccess() /home/ubuntu/workspace/server/modules/v1/controllers/CaloriesController.php:57
+[18-Apr-2016 18:01:36 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/ubuntu/workspace/server/config/web.php on line 79
+[18-Apr-2016 18:01:36 UTC] PHP Stack trace:
+[18-Apr-2016 18:01:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 00:59:26 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\ArrayHelper' not found in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 37
+[26-Apr-2016 00:59:26 UTC] PHP Stack trace:
+[26-Apr-2016 00:59:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 00:59:26 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 00:59:26 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 00:59:26 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 00:59:26 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[26-Apr-2016 00:59:26 UTC] PHP   6. yii\web\Controller->beforeAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:152
+[26-Apr-2016 00:59:26 UTC] PHP   7. yii\base\Controller->beforeAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Controller.php:108
+[26-Apr-2016 00:59:26 UTC] PHP   8. yii\base\Component->trigger() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:269
+[26-Apr-2016 00:59:26 UTC] PHP   9. yii\base\Component->ensureBehaviors() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Component.php:529
+[26-Apr-2016 00:59:26 UTC] PHP  10. app\modules\v1\controllers\SwaggerController->behaviors() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Component.php:646
+[26-Apr-2016 01:00:13 UTC] PHP Fatal error:  Call to undefined function app\modules\v1\controllers\get_file_contents() in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 62
+[26-Apr-2016 01:00:13 UTC] PHP Stack trace:
+[26-Apr-2016 01:00:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:00:13 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:00:13 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:00:13 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:00:13 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[26-Apr-2016 01:00:13 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[26-Apr-2016 01:00:13 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[26-Apr-2016 01:00:13 UTC] PHP   8. app\modules\v1\controllers\SwaggerController->actionIndex() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[26-Apr-2016 01:07:09 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 63
+[26-Apr-2016 01:07:09 UTC] PHP Stack trace:
+[26-Apr-2016 01:07:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:07:09 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:07:09 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:07:09 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:07:09 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:07:09 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:07:09 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:07:09 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:07:09 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:07:09 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:07:17 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 63
+[26-Apr-2016 01:07:17 UTC] PHP Stack trace:
+[26-Apr-2016 01:07:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:07:17 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:07:17 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:07:17 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:07:17 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:07:17 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:07:17 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:07:17 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:07:17 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:07:17 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:09 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 63
+[26-Apr-2016 01:08:09 UTC] PHP Stack trace:
+[26-Apr-2016 01:08:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:08:09 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:08:09 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:08:09 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:08:09 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:08:09 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:08:09 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:08:09 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:09 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:09 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:17 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 63
+[26-Apr-2016 01:08:17 UTC] PHP Stack trace:
+[26-Apr-2016 01:08:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:08:17 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:08:17 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:08:17 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:08:17 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:08:17 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:08:17 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:08:17 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:17 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:17 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:35 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 63
+[26-Apr-2016 01:08:35 UTC] PHP Stack trace:
+[26-Apr-2016 01:08:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:08:35 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:08:35 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:08:35 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:08:35 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:08:35 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:08:35 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:08:35 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:35 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:08:35 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:10:46 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 64
+[26-Apr-2016 01:10:46 UTC] PHP Stack trace:
+[26-Apr-2016 01:10:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:10:46 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:10:46 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:10:46 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:10:46 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:10:46 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:10:46 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:10:46 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:10:46 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:10:46 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:13:37 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 64
+[26-Apr-2016 01:13:37 UTC] PHP Stack trace:
+[26-Apr-2016 01:13:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:13:37 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:13:37 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:13:37 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:13:37 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:13:37 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:13:37 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:13:37 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:13:37 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:13:37 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:13:57 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 64
+[26-Apr-2016 01:13:57 UTC] PHP Stack trace:
+[26-Apr-2016 01:13:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:13:57 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:13:57 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:13:57 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:13:57 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:13:57 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:13:57 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:13:57 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:13:57 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:13:57 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:14:00 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/server/modules/v1/controllers/SwaggerController.php on line 64
+[26-Apr-2016 01:14:00 UTC] PHP Stack trace:
+[26-Apr-2016 01:14:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 01:14:00 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 01:14:00 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 01:14:00 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 01:14:00 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[26-Apr-2016 01:14:00 UTC] PHP   6. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:512
+[26-Apr-2016 01:14:00 UTC] PHP   7. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[26-Apr-2016 01:14:00 UTC] PHP   8. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:14:00 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 01:14:00 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[26-Apr-2016 03:20:22 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home/ubuntu/workspace/server/views/swagger-ui/index.php on line 3
+[26-Apr-2016 03:20:22 UTC] PHP Stack trace:
+[26-Apr-2016 03:20:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[26-Apr-2016 03:20:22 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[26-Apr-2016 03:20:22 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[26-Apr-2016 03:20:22 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[26-Apr-2016 03:20:22 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[26-Apr-2016 03:20:22 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[26-Apr-2016 03:20:22 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[26-Apr-2016 03:20:22 UTC] PHP   8. app\controllers\SwaggerUiController->actionIndex() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[26-Apr-2016 03:20:22 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/server/controllers/SwaggerUiController.php:14
+[26-Apr-2016 03:20:22 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:377
+[26-Apr-2016 03:20:22 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:149
+[26-Apr-2016 03:20:22 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:247
+[27-Apr-2016 05:33:15 UTC] PHP Fatal error:  Class 'app\controllers\Controller' not found in /home/ubuntu/workspace/server/controllers/BaseController.php on line 7
+[27-Apr-2016 05:33:15 UTC] PHP Stack trace:
+[27-Apr-2016 05:33:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[27-Apr-2016 05:33:15 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[27-Apr-2016 05:33:15 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[27-Apr-2016 05:33:15 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[27-Apr-2016 05:33:15 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[27-Apr-2016 05:33:15 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[27-Apr-2016 05:33:15 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[27-Apr-2016 05:33:15 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[27-Apr-2016 05:33:15 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[27-Apr-2016 05:33:15 UTC] PHP  10. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[27-Apr-2016 05:33:15 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:10
+[27-Apr-2016 05:33:15 UTC] PHP  12. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:10
+[27-Apr-2016 05:33:15 UTC] PHP  13. include() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/BaseYii.php:288
+[28-Apr-2016 03:48:01 UTC] PHP Fatal error:  Class 'app\modules\v1\controllers\BadRequestHttpException' not found in /home/ubuntu/workspace/server/modules/v1/controllers/UserController.php on line 77
+[28-Apr-2016 03:48:01 UTC] PHP Stack trace:
+[28-Apr-2016 03:48:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[28-Apr-2016 03:48:01 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[28-Apr-2016 03:48:01 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[28-Apr-2016 03:48:01 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[28-Apr-2016 03:48:01 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[28-Apr-2016 03:48:01 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[28-Apr-2016 03:48:01 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[28-Apr-2016 03:48:01 UTC] PHP   8. app\modules\v1\controllers\UserController->actionCreate() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[03-May-2016 04:49:11 UTC] PHP Fatal error:  Call to undefined method Mock_ContactForm_4382f3e9::contact() in /home/ubuntu/workspace/server/tests/codeception/unit/models/ContactFormTest.php on line 39
+[03-May-2016 04:49:11 UTC] PHP Stack trace:
+[03-May-2016 04:49:11 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[03-May-2016 04:49:11 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[03-May-2016 04:49:11 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[03-May-2016 04:49:11 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[03-May-2016 04:49:11 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[03-May-2016 04:49:11 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[03-May-2016 04:49:11 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[03-May-2016 04:49:11 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[03-May-2016 04:49:11 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[03-May-2016 04:49:11 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[03-May-2016 04:49:11 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[03-May-2016 04:49:11 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[03-May-2016 04:49:11 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[03-May-2016 04:49:11 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[03-May-2016 04:49:11 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[03-May-2016 04:49:11 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[03-May-2016 04:49:11 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[03-May-2016 04:49:11 UTC] PHP  18. tests\codeception\unit\models\ContactFormTest->testContact() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[03-May-2016 05:22:56 UTC] PHP Warning:  file_put_contents(/home/ubuntu/workspace/server/tests/codeception/_support/ApiHelper.php): failed to open stream: No such file or directory in /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Shared/FileSystem.php on line 54
+[03-May-2016 05:22:56 UTC] PHP Stack trace:
+[03-May-2016 05:22:56 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[03-May-2016 05:22:56 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[03-May-2016 05:22:56 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[03-May-2016 05:22:56 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[03-May-2016 05:22:56 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[03-May-2016 05:22:56 UTC] PHP   6. Codeception\Command\GenerateSuite->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[03-May-2016 05:22:56 UTC] PHP   7. Codeception\Command\GenerateSuite->save() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/GenerateSuite.php:77
+[03-May-2016 05:22:56 UTC] PHP   8. file_put_contents() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Shared/FileSystem.php:54
+[03-May-2016 05:44:58 UTC] PHP Warning:  file_put_contents(/home/ubuntu/workspace/server/tests/codeception/_support/ApiHelper.php): failed to open stream: No such file or directory in /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Shared/FileSystem.php on line 54
+[03-May-2016 05:44:59 UTC] PHP Stack trace:
+[03-May-2016 05:44:59 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[03-May-2016 05:44:59 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[03-May-2016 05:44:59 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[03-May-2016 05:44:59 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[03-May-2016 05:44:59 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[03-May-2016 05:44:59 UTC] PHP   6. Codeception\Command\GenerateSuite->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[03-May-2016 05:44:59 UTC] PHP   7. Codeception\Command\GenerateSuite->save() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/GenerateSuite.php:77
+[03-May-2016 05:44:59 UTC] PHP   8. file_put_contents() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Shared/FileSystem.php:54
+[03-May-2016 22:28:30 UTC] PHP Fatal error:  Call to undefined method Yii::app() in /home/ubuntu/workspace/server/views/site/error.php on line 21
+[03-May-2016 22:28:30 UTC] PHP Stack trace:
+[03-May-2016 22:28:30 UTC] PHP   1. yii\base\ErrorHandler->handleException() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/ErrorHandler.php:0
+[03-May-2016 22:28:30 UTC] PHP   2. yii\web\ErrorHandler->renderException() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/ErrorHandler.php:109
+[03-May-2016 22:28:30 UTC] PHP   3. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/ErrorHandler.php:93
+[03-May-2016 22:28:30 UTC] PHP   4. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[03-May-2016 22:28:30 UTC] PHP   5. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[03-May-2016 22:28:30 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[03-May-2016 22:28:30 UTC] PHP   7. yii\web\ErrorAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[03-May-2016 22:28:30 UTC] PHP   8. yii\base\Controller->render() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/ErrorAction.php:109
+[03-May-2016 22:28:30 UTC] PHP   9. yii\base\View->render() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:377
+[03-May-2016 22:28:30 UTC] PHP  10. yii\base\View->renderFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:149
+[03-May-2016 22:28:30 UTC] PHP  11. yii\base\View->renderPhpFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:247
+[03-May-2016 22:28:30 UTC] PHP  12. require() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:325
+[03-May-2016 22:29:55 UTC] An Error occurred while handling another error:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\Application::createAbsoluteUrl()' in /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /home/ubuntu/workspace/server/views/site/error.php(23): yii\base\Component->__call('createAbsoluteU...', Array)
+#1 /home/ubuntu/workspace/server/views/site/error.php(23): yii\web\Application->createAbsoluteUrl('/server/web/v1/...')
+#2 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php(325): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(app\controllers\SiteController))
+#5 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php(377): yii\base\View->render('error', Array, Object(app\controllers\SiteController))
+#6 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/ErrorAction.php(109): yii\base\Controller->render('error', Array)
+#7 [internal function]: yii\web\ErrorAction->run()
+#8 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#9 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams(Array)
+#10 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('error', Array)
+#11 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/ErrorHandler.php(93): yii\base\Module->runAction('site/error')
+#12 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#14 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: v1/user/labelsd' in /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('labelsd', Array)
+#1 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('v1/user/labelsd', Array)
+#2 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/ubuntu/workspace/server/web/index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/ubuntu/workspace/server/web/index.php(16): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'toptal-comp2912.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ru;q=0.6,th;q=0.4',
+    'HTTP_COOKIE' => '_csrf=36bb26bf2449eb31d3fae238fa0883169f9810333765259693ddb7bfe761a997a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kb89VypXDpET4d0MvHqDM73nMpUoY42p%22%3B%7D; XDEBUG_SESSION=cloud9ide',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'usw',
+    'HTTP_X_FORWARDED_FOR' => '50.92.50.61',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.4.0/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at toptal-comp2912.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'toptal-comp2912.c9users.io',
+    'SERVER_ADDR' => '172.17.147.30',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.0.75',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/server/web/index.php',
+    'REMOTE_PORT' => '42636',
+    'REDIRECT_URL' => '/server/web/v1/user/labelsd',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/server/web/v1/user/labelsd',
+    'SCRIPT_NAME' => '/server/web/index.php',
+    'PHP_SELF' => '/server/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1462314595.3659999370574951171875,
+    'REQUEST_TIME' => 1462314595,
+]
+[03-May-2016 22:31:30 UTC] PHP Fatal error:  Class 'Url' not found in /home/ubuntu/workspace/server/views/site/error.php on line 21
+[03-May-2016 22:31:30 UTC] PHP Stack trace:
+[03-May-2016 22:31:30 UTC] PHP   1. yii\base\ErrorHandler->handleException() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/ErrorHandler.php:0
+[03-May-2016 22:31:30 UTC] PHP   2. yii\web\ErrorHandler->renderException() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/ErrorHandler.php:109
+[03-May-2016 22:31:30 UTC] PHP   3. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/ErrorHandler.php:93
+[03-May-2016 22:31:30 UTC] PHP   4. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[03-May-2016 22:31:30 UTC] PHP   5. yii\base\Action->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[03-May-2016 22:31:30 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[03-May-2016 22:31:30 UTC] PHP   7. yii\web\ErrorAction->run() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Action.php:92
+[03-May-2016 22:31:30 UTC] PHP   8. yii\base\Controller->render() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/ErrorAction.php:109
+[03-May-2016 22:31:30 UTC] PHP   9. yii\base\View->render() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:377
+[03-May-2016 22:31:30 UTC] PHP  10. yii\base\View->renderFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:149
+[03-May-2016 22:31:30 UTC] PHP  11. yii\base\View->renderPhpFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:247
+[03-May-2016 22:31:30 UTC] PHP  12. require() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:325
+[04-May-2016 18:03:58 UTC] PHP Fatal error:  Access to undeclared static property: Codeception\TestCase\Cept::$config in /home/ubuntu/workspace/server/tests/codeception/api/UserCept.php on line 11
+[04-May-2016 18:03:58 UTC] PHP Stack trace:
+[04-May-2016 18:03:58 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[04-May-2016 18:03:58 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[04-May-2016 18:03:58 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[04-May-2016 18:03:58 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[04-May-2016 18:03:58 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[04-May-2016 18:03:58 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[04-May-2016 18:03:58 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[04-May-2016 18:03:58 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[04-May-2016 18:03:58 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[04-May-2016 18:03:58 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[04-May-2016 18:03:58 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[04-May-2016 18:03:58 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[04-May-2016 18:03:58 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[04-May-2016 18:03:58 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[04-May-2016 18:03:58 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[04-May-2016 18:03:58 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[04-May-2016 18:03:58 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[04-May-2016 18:03:58 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[04-May-2016 18:03:58 UTC] PHP  19. require() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/TestCase/Cept.php:64
+[04-May-2016 18:13:43 UTC] PHP Fatal error:  Access to undeclared static property: Codeception\TestCase\Cept::$config in /home/ubuntu/workspace/server/tests/codeception/api/UserCept.php on line 11
+[04-May-2016 18:13:43 UTC] PHP Stack trace:
+[04-May-2016 18:13:43 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[04-May-2016 18:13:43 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[04-May-2016 18:13:43 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[04-May-2016 18:13:43 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[04-May-2016 18:13:43 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[04-May-2016 18:13:43 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[04-May-2016 18:13:43 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[04-May-2016 18:13:43 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[04-May-2016 18:13:43 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[04-May-2016 18:13:43 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[04-May-2016 18:13:43 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[04-May-2016 18:13:43 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[04-May-2016 18:13:43 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[04-May-2016 18:13:43 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[04-May-2016 18:13:43 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[04-May-2016 18:13:43 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[04-May-2016 18:13:43 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[04-May-2016 18:13:43 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[04-May-2016 18:13:43 UTC] PHP  19. require() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/TestCase/Cept.php:64
+[07-May-2016 21:50:27 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/server/controllers/TestController.php on line 65
+[07-May-2016 21:50:27 UTC] PHP Stack trace:
+[07-May-2016 21:50:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[07-May-2016 21:50:27 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[07-May-2016 21:50:27 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[07-May-2016 21:50:27 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[07-May-2016 21:50:27 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:448
+[07-May-2016 21:50:27 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:520
+[07-May-2016 21:50:27 UTC] PHP   7. class_exists() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[07-May-2016 21:50:27 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[07-May-2016 21:50:27 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:562
+[07-May-2016 21:51:35 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/server/views/test/server.php on line 27
+[07-May-2016 21:51:35 UTC] PHP Stack trace:
+[07-May-2016 21:51:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[07-May-2016 21:51:35 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/server/web/index.php:16
+[07-May-2016 21:51:35 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Application.php:375
+[07-May-2016 21:51:35 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/web/Application.php:84
+[07-May-2016 21:51:35 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Module.php:454
+[07-May-2016 21:51:35 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:154
+[07-May-2016 21:51:35 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55}() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-May-2016 21:51:35 UTC] PHP   8. app\controllers\TestController->actionServer() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/InlineAction.php:55
+[07-May-2016 21:51:35 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/server/controllers/TestController.php:37
+[07-May-2016 21:51:35 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/Controller.php:377
+[07-May-2016 21:51:35 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:149
+[07-May-2016 21:51:35 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/server/vendor/yiisoft/yii2/base/View.php:247
+[09-May-2016 22:54:33 UTC] PHP Warning:  Unterminated comment starting line 19 in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 19
+[09-May-2016 22:54:33 UTC] PHP Stack trace:
+[09-May-2016 22:54:33 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 22:54:33 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 22:54:33 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 22:54:33 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 22:54:33 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 22:54:33 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 22:54:33 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 22:54:33 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 22:54:33 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 22:54:33 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 22:54:33 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 22:54:33 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 22:54:33 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 22:54:33 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 22:54:33 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 22:54:33 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 22:54:33 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 22:54:33 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 22:55:16 UTC] PHP Warning:  Unterminated comment starting line 20 in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 20
+[09-May-2016 22:55:16 UTC] PHP Stack trace:
+[09-May-2016 22:55:16 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 22:55:16 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 22:55:16 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 22:55:16 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 22:55:16 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 22:55:16 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 22:55:16 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 22:55:16 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 22:55:16 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 22:55:16 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 22:55:16 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 22:55:16 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 22:55:16 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 22:55:16 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 22:55:16 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 22:55:16 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 22:55:16 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 22:55:16 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:03:33 UTC] PHP Warning:  Unterminated comment starting line 22 in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 22
+[09-May-2016 23:03:33 UTC] PHP Stack trace:
+[09-May-2016 23:03:33 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 23:03:33 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 23:03:33 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 23:03:33 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 23:03:33 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 23:03:33 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 23:03:33 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 23:03:33 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 23:03:33 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 23:03:33 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 23:03:33 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 23:03:33 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 23:03:33 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 23:03:33 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 23:03:33 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 23:03:33 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 23:03:33 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:03:33 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:04:07 UTC] PHP Warning:  Unterminated comment starting line 22 in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 22
+[09-May-2016 23:04:07 UTC] PHP Stack trace:
+[09-May-2016 23:04:07 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 23:04:07 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 23:04:07 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 23:04:07 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 23:04:07 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 23:04:07 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 23:04:07 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 23:04:07 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 23:04:07 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 23:04:07 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 23:04:07 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 23:04:07 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 23:04:07 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 23:04:07 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 23:04:07 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 23:04:07 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 23:04:07 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:04:07 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:06:00 UTC] PHP Warning:  Unterminated comment starting line 23 in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 23
+[09-May-2016 23:06:00 UTC] PHP Stack trace:
+[09-May-2016 23:06:00 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 23:06:00 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 23:06:00 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 23:06:00 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 23:06:00 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 23:06:00 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 23:06:00 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 23:06:00 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 23:06:00 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 23:06:00 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 23:06:00 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 23:06:00 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 23:06:00 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 23:06:00 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 23:06:00 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 23:06:00 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 23:06:00 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:06:00 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:06:13 UTC] PHP Warning:  Unterminated comment starting line 23 in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 23
+[09-May-2016 23:06:13 UTC] PHP Stack trace:
+[09-May-2016 23:06:13 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 23:06:13 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 23:06:13 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 23:06:13 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 23:06:13 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 23:06:13 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 23:06:13 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 23:06:13 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 23:06:13 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 23:06:13 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 23:06:13 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 23:06:13 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 23:06:13 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 23:06:13 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 23:06:13 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 23:06:13 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 23:06:13 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:06:13 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:09:36 UTC] PHP Warning:  Unterminated comment starting line 25 in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 25
+[09-May-2016 23:09:36 UTC] PHP Stack trace:
+[09-May-2016 23:09:36 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 23:09:36 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 23:09:36 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 23:09:36 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 23:09:36 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 23:09:36 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 23:09:36 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 23:09:36 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 23:09:36 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 23:09:36 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 23:09:36 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 23:09:36 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 23:09:36 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 23:09:36 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 23:09:36 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 23:09:36 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 23:09:36 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:09:36 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:12:05 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/ubuntu/workspace/server/tests/codeception/api/UserDELETECept.php on line 51
+[09-May-2016 23:12:05 UTC] PHP Stack trace:
+[09-May-2016 23:12:05 UTC] PHP   1. {main}() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:0
+[09-May-2016 23:12:05 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/.composer/vendor/codeception/codeception/codecept:27
+[09-May-2016 23:12:05 UTC] PHP   3. Symfony\Component\Console\Application->doRun() /home/ubuntu/.composer/vendor/symfony/console/Application.php:123
+[09-May-2016 23:12:05 UTC] PHP   4. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/.composer/vendor/symfony/console/Application.php:192
+[09-May-2016 23:12:05 UTC] PHP   5. Symfony\Component\Console\Command\Command->run() /home/ubuntu/.composer/vendor/symfony/console/Application.php:844
+[09-May-2016 23:12:05 UTC] PHP   6. Codeception\Command\Run->execute() /home/ubuntu/.composer/vendor/symfony/console/Command/Command.php:259
+[09-May-2016 23:12:05 UTC] PHP   7. Codeception\Command\Run->runSuites() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:192
+[09-May-2016 23:12:05 UTC] PHP   8. Codeception\Codecept->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Command/Run.php:263
+[09-May-2016 23:12:05 UTC] PHP   9. Codeception\Codecept->runSuite() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:158
+[09-May-2016 23:12:05 UTC] PHP  10. Codeception\SuiteManager->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/Codecept.php:175
+[09-May-2016 23:12:05 UTC] PHP  11. Codeception\PHPUnit\Runner->doEnhancedRun() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/SuiteManager.php:158
+[09-May-2016 23:12:05 UTC] PHP  12. PHPUnit_Framework_TestSuite->run() /home/ubuntu/.composer/vendor/codeception/codeception/src/Codeception/PHPUnit/Runner.php:100
+[09-May-2016 23:12:05 UTC] PHP  13. PHPUnit_Framework_TestCase->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[09-May-2016 23:12:05 UTC] PHP  14. PHPUnit_Framework_TestResult->run() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[09-May-2016 23:12:05 UTC] PHP  15. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[09-May-2016 23:12:05 UTC] PHP  16. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[09-May-2016 23:12:05 UTC] PHP  17. ReflectionMethod->invokeArgs() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[09-May-2016 23:12:05 UTC] PHP  18. Codeception\TestCase\Cept->testCodecept() /home/ubuntu/.composer/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[10-May-2016 02:16:25 UTC] PHP Warning:  include(/../c3.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:25 UTC] PHP Warning:  include(/../c3.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:25 UTC] PHP Stack trace:
+[10-May-2016 02:16:25 UTC] PHP Stack trace:
+[10-May-2016 02:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:25 UTC] PHP Warning:  include(): Failed opening '/../c3.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:25 UTC] PHP Warning:  include(): Failed opening '/../c3.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:25 UTC] PHP Stack trace:
+[10-May-2016 02:16:25 UTC] PHP Stack trace:
+[10-May-2016 02:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:25 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 02:16:25 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 02:16:25 UTC] PHP Stack trace:
+[10-May-2016 02:16:25 UTC] PHP Stack trace:
+[10-May-2016 02:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:50 UTC] PHP Warning:  include(/../c3.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:50 UTC] PHP Stack trace:
+[10-May-2016 02:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:50 UTC] PHP Warning:  include(): Failed opening '/../c3.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:50 UTC] PHP Stack trace:
+[10-May-2016 02:16:50 UTC] PHP Warning:  include(/../c3.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:50 UTC] PHP Stack trace:
+[10-May-2016 02:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:50 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 02:16:50 UTC] PHP Warning:  include(): Failed opening '/../c3.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 02:16:50 UTC] PHP Stack trace:
+[10-May-2016 02:16:50 UTC] PHP Stack trace:
+[10-May-2016 02:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 02:16:50 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 02:16:50 UTC] PHP Stack trace:
+[10-May-2016 02:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:35:52 UTC] PHP Warning:  include(/../tests/c3.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 03:35:52 UTC] PHP Warning:  include(/../tests/c3.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 03:35:52 UTC] PHP Stack trace:
+[10-May-2016 03:35:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:35:52 UTC] PHP Warning:  include(): Failed opening '/../tests/c3.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 03:35:52 UTC] PHP Stack trace:
+[10-May-2016 03:35:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:35:52 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 03:35:52 UTC] PHP Stack trace:
+[10-May-2016 03:35:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:35:52 UTC] PHP Stack trace:
+[10-May-2016 03:35:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:35:52 UTC] PHP Warning:  include(): Failed opening '/../tests/c3.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 03:35:52 UTC] PHP Stack trace:
+[10-May-2016 03:35:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:35:52 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 03:35:52 UTC] PHP Stack trace:
+[10-May-2016 03:35:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:36:35 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 03:36:35 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 11
+[10-May-2016 03:36:35 UTC] PHP Stack trace:
+[10-May-2016 03:36:35 UTC] PHP Stack trace:
+[10-May-2016 03:36:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:36:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:40:30 UTC] PHP Fatal error:  Class 'Codeception\Configuration' not found in /home/ubuntu/workspace/server/tests/c3.php on line 84
+[10-May-2016 03:40:30 UTC] PHP Stack trace:
+[10-May-2016 03:40:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:40:30 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:8
+[10-May-2016 03:43:25 UTC] PHP Fatal error:  Class 'Codeception\Configuration' not found in /home/ubuntu/workspace/server/tests/c3.php on line 84
+[10-May-2016 03:43:25 UTC] PHP Stack trace:
+[10-May-2016 03:43:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 03:43:25 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:8
+[10-May-2016 04:41:02 UTC] PHP Fatal error:  Class 'Codeception\Configuration' not found in /home/ubuntu/workspace/server/tests/c3.php on line 84
+[10-May-2016 04:41:02 UTC] PHP Stack trace:
+[10-May-2016 04:41:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:41:02 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:8
+[10-May-2016 04:52:43 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/server/web/../.composer/vendor/codeception/codeception/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 04:52:43 UTC] PHP Stack trace:
+[10-May-2016 04:52:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:52:43 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/server/web/../.composer/vendor/codeception/codeception/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/server/web/index.php on line 8
+[10-May-2016 04:52:43 UTC] PHP Stack trace:
+[10-May-2016 04:52:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:53:19 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 04:53:19 UTC] PHP Stack trace:
+[10-May-2016 04:53:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:53:19 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 04:53:19 UTC] PHP Fatal error:  Cannot redeclare class Yii in /home/ubuntu/workspace/server/vendor/yiisoft/yii2/Yii.php on line 0
+[10-May-2016 04:53:19 UTC] PHP Stack trace:
+[10-May-2016 04:53:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:54:38 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 04:54:38 UTC] PHP Stack trace:
+[10-May-2016 04:54:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:54:38 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 04:54:38 UTC] PHP Fatal error:  Cannot redeclare class Yii in /home/ubuntu/workspace/server/vendor/yiisoft/yii2/Yii.php on line 0
+[10-May-2016 04:54:38 UTC] PHP Stack trace:
+[10-May-2016 04:54:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:55:23 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 04:55:23 UTC] PHP Stack trace:
+[10-May-2016 04:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:55:23 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 04:55:23 UTC] PHP Fatal error:  Cannot redeclare class Yii in /home/ubuntu/workspace/server/vendor/yiisoft/yii2/Yii.php on line 0
+[10-May-2016 04:55:23 UTC] PHP Stack trace:
+[10-May-2016 04:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:56:29 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 04:56:29 UTC] PHP Stack trace:
+[10-May-2016 04:56:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 04:56:29 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 05:01:13 UTC] PHP Fatal error:  Class 'App' not found in /home/ubuntu/workspace/server/web/index.php on line 12
+[10-May-2016 05:01:13 UTC] PHP Stack trace:
+[10-May-2016 05:01:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 19:24:35 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 19:24:35 UTC] PHP Stack trace:
+[10-May-2016 19:24:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 19:24:35 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 19:25:30 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 19:25:30 UTC] PHP Stack trace:
+[10-May-2016 19:25:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 19:25:30 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 19:26:07 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 19:26:07 UTC] PHP Stack trace:
+[10-May-2016 19:26:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 19:26:07 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 20:38:20 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 20:38:20 UTC] PHP Stack trace:
+[10-May-2016 20:38:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 20:38:20 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:17:07 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:17:07 UTC] PHP Stack trace:
+[10-May-2016 21:17:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:17:07 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:17:36 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:17:36 UTC] PHP Stack trace:
+[10-May-2016 21:17:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:17:36 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:17:49 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:17:49 UTC] PHP Stack trace:
+[10-May-2016 21:17:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:17:49 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:17:51 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:17:51 UTC] PHP Stack trace:
+[10-May-2016 21:17:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:17:51 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:19:12 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:19:12 UTC] PHP Stack trace:
+[10-May-2016 21:19:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:19:12 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:27:26 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:27:26 UTC] PHP Stack trace:
+[10-May-2016 21:27:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:27:26 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:28:02 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:28:02 UTC] PHP Stack trace:
+[10-May-2016 21:28:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:28:02 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:30:56 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:30:56 UTC] PHP Stack trace:
+[10-May-2016 21:30:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:30:56 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:30:56 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:30:56 UTC] PHP Stack trace:
+[10-May-2016 21:30:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:30:56 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:31:50 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:31:50 UTC] PHP Stack trace:
+[10-May-2016 21:31:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:31:50 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:31:50 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:31:50 UTC] PHP Stack trace:
+[10-May-2016 21:31:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:31:50 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:32:02 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:32:02 UTC] PHP Stack trace:
+[10-May-2016 21:32:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:32:02 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:33:52 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:33:52 UTC] PHP Stack trace:
+[10-May-2016 21:33:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:33:52 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:35:08 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:35:08 UTC] PHP Stack trace:
+[10-May-2016 21:35:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:35:08 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:38:19 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:38:19 UTC] PHP Stack trace:
+[10-May-2016 21:38:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:38:19 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:38:23 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:38:23 UTC] PHP Stack trace:
+[10-May-2016 21:38:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:38:23 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:38:31 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:38:31 UTC] PHP Stack trace:
+[10-May-2016 21:38:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:38:31 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:38:33 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:38:33 UTC] PHP Stack trace:
+[10-May-2016 21:38:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:38:33 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:38:38 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:38:38 UTC] PHP Stack trace:
+[10-May-2016 21:38:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:38:38 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:40:38 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:40:38 UTC] PHP Stack trace:
+[10-May-2016 21:40:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:40:38 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:44:10 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:44:10 UTC] PHP Stack trace:
+[10-May-2016 21:44:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:44:10 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:45:19 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 100
+[10-May-2016 21:45:19 UTC] PHP Stack trace:
+[10-May-2016 21:45:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:45:19 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:52:18 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 21:52:18 UTC] PHP Stack trace:
+[10-May-2016 21:52:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:52:18 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:58:04 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 21:58:04 UTC] PHP Stack trace:
+[10-May-2016 21:58:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:58:04 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 21:58:07 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 21:58:07 UTC] PHP Stack trace:
+[10-May-2016 21:58:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 21:58:07 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:00:02 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:00:02 UTC] PHP Stack trace:
+[10-May-2016 22:00:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:00:02 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:03:04 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:03:04 UTC] PHP Stack trace:
+[10-May-2016 22:03:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:03:04 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:39 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:39 UTC] PHP Stack trace:
+[10-May-2016 22:07:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:39 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:45 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:45 UTC] PHP Stack trace:
+[10-May-2016 22:07:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:45 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:46 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:46 UTC] PHP Stack trace:
+[10-May-2016 22:07:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:46 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:47 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:47 UTC] PHP Stack trace:
+[10-May-2016 22:07:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:47 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:47 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:47 UTC] PHP Stack trace:
+[10-May-2016 22:07:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:47 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:47 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:47 UTC] PHP Stack trace:
+[10-May-2016 22:07:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:47 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:48 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:48 UTC] PHP Stack trace:
+[10-May-2016 22:07:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:48 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:48 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:48 UTC] PHP Stack trace:
+[10-May-2016 22:07:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:48 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:48 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:48 UTC] PHP Stack trace:
+[10-May-2016 22:07:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:48 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:48 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:48 UTC] PHP Stack trace:
+[10-May-2016 22:07:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:48 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:48 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:48 UTC] PHP Stack trace:
+[10-May-2016 22:07:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:48 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:07:48 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:07:48 UTC] PHP Stack trace:
+[10-May-2016 22:07:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:07:48 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:10 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:10 UTC] PHP Stack trace:
+[10-May-2016 22:08:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:10 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:14 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:14 UTC] PHP Stack trace:
+[10-May-2016 22:08:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:14 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:29 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:29 UTC] PHP Stack trace:
+[10-May-2016 22:08:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:29 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:31 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:32 UTC] PHP Stack trace:
+[10-May-2016 22:08:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:32 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:43 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:43 UTC] PHP Stack trace:
+[10-May-2016 22:08:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:43 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:45 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:45 UTC] PHP Stack trace:
+[10-May-2016 22:08:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:45 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:48 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:48 UTC] PHP Stack trace:
+[10-May-2016 22:08:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:48 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:49 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:49 UTC] PHP Stack trace:
+[10-May-2016 22:08:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:49 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:50 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:50 UTC] PHP Stack trace:
+[10-May-2016 22:08:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:50 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:08:52 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:08:52 UTC] PHP Stack trace:
+[10-May-2016 22:08:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:08:52 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:09:15 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:09:15 UTC] PHP Stack trace:
+[10-May-2016 22:09:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:09:15 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9
+[10-May-2016 22:09:17 UTC] PHP Notice:  Undefined index: HTTP_X_CODECEPTION_CODECOVERAGE in /home/ubuntu/workspace/server/tests/c3.php on line 101
+[10-May-2016 22:09:17 UTC] PHP Stack trace:
+[10-May-2016 22:09:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/server/web/index.php:0
+[10-May-2016 22:09:17 UTC] PHP   2. include() /home/ubuntu/workspace/server/web/index.php:9

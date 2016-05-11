@@ -1,0 +1,51 @@
+
+<h3>Users</h3>
+
+<button id="createButton" class="btn btn-sm btn-success pull-left" ng-click="update(null)">Create New Record</button>
+
+
+
+<table class="table crud">
+	<thead>
+		<tr>
+			<th class="action">Action</th>
+			<th>{{userLabelList.user_id}}</th>
+			<th>{{userLabelList.user_email}}</th>
+			<th>{{userLabelList.user_firstname}}</th>
+			<th>{{userLabelList.user_lastname}}</th>
+			<th>{{userLabelList.user_role}}</th>
+			<th>{{userLabelList.user_expectedcalories}}</th>
+		</tr>
+
+		<tr ng-repeat="user in userList">
+
+			<td>
+				<button class="btn btn-xs btn-info" ng-click="read(user.user_id)">
+				    Review
+				</button>
+
+				<button class="btn btn-xs btn-warning" ng-click="update(user.user_id)">
+				    Edit
+				</button>
+
+				<button class="btn btn-xs btn-danger" ng-click="delete(user.user_id)">
+				    Delete
+				</button>
+			</td>
+			
+			<td class="text-left">{{user.user_id}}</td>
+			<td class="text-left">{{user.user_email}}</td>
+			<td class="text-left">{{user.user_firstname}}</td>
+			<td class="text-left">{{user.user_lastname}}</td>
+			<td class="text-left">{{user.user_role}}</td>
+			<td class="text-left">{{user.user_expectedcalories}}</td>
+			
+
+		</tr>
+	</thead>
+</table>
+
+<div ng-show="error" class="alert alert-danger">
+    <strong>Error:</strong> {{errorMessage}}
+</div>
+

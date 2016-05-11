@@ -1,0 +1,17 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - PhpBrowser
+        - REST
+#        - Yii2
+    config:
+        PhpBrowser:
+            #url: https://toptal-comp2912.c9users.io/server/web/v1
+            url: http://localhost:8080/server/web/v1
+        REST:
+            #url: https://toptal-comp2912.c9users.io/server/web/v1
+            #url: http://localhost/server/web/v1
+#            depends: Yii2
+            part: Json
+#        Yii2:
+#            configFile: 'codeception/config/acceptance.php'

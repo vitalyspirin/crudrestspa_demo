@@ -1,0 +1,605 @@
+{  
+    "swagger":"2.0",
+    "info":{  
+      "description":"This is a demo project for CRUD/REST/SPA functionality using Yii2 and AngularJS.",
+      "version":"1.0.0",
+      "title":"REST API for CRUD/REST/SPA demo"
+    },
+    "basePath":"/server/web/v1",
+    "consumes":[ "application/json" ],
+    "produces":[ "application/json" ],
+    "schemes":[ "https" ],
+    
+    "tags":[  
+        {  
+            "name":"user",
+            "description":"Operations with User"
+        },
+        {  
+            "name":"calories",
+            "description":"Operations with Calories"
+        }
+    ],
+    
+    "paths":{  
+        "/users":{  
+            "get":{ 
+                "tags": [ "user" ],
+                "summary":"Returns all users",
+                "description":"Returns all users",
+                "parameters":[
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user who has 'manager' role",
+                        "required":true,
+                        "type":"string",
+                        "default":"LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "type":"array",
+                            "items":{  
+                                "$ref":"#/definitions/User"
+                            }
+                        }
+                    },
+                    "403":{  
+                        "description":"Permission error"
+                    }
+                }
+            },
+            "post":{  
+                "tags": [ "user" ],
+                "summary":"Create new user or login",
+                "description":"If user with specified email doesn't exist then it will be created, otherwise user will be logged in",
+                "parameters":[
+                    {
+                        "name":"body",
+                        "in":"body",
+                        "description":"user email and user_password",
+                        "required":true,
+                        "type":"string",
+                        "default":"{\"user_email\": \"vitaly.spirin@gmail.com\",\"user_password\": \"vitaly\"}"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/User"
+                        }
+                    },
+                    "400":{  
+                        "description":"Bad Request"
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    },
+                    "422":{  
+                        "description":"Data validation failed"
+                    }
+                }
+            }
+        },
+        "/users/{user_id}":{  
+            "get":{
+                "tags": [ "user" ],
+                "summary":"Return user with specified id",
+                "parameters":[
+                    {
+                        "name":"user_id",
+                        "in":"path",
+                        "description":"user_id of the user that will retrieved",
+                        "required":true,
+                        "type":"integer",
+                        "default":1
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user who has 'manager' role or user whose info will be retrieved",
+                        "required":true,
+                        "type":"string",
+                        "default":"LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/User"
+                        }
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    },
+                    "403":{  
+                        "description":"Forbidden"
+                    },
+                    "404":{  
+                        "description":"Not Found"
+                    }
+                }
+            },
+            "put":{
+                "tags": [ "user" ],
+                "summary":"Update user with specified id",
+                "parameters":[
+                    {
+                        "name":"user_id",
+                        "in":"path",
+                        "description":"user_id of the user that will updated",
+                        "required":true,
+                        "type":"integer",
+                        "default":1
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user who has 'manager' role or user whose info will be updated",
+                        "required":true,
+                        "type":"string",
+                        "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    },
+                    {
+                        "name":"body",
+                        "in":"body",
+                        "description":"user fields that should be updated",
+                        "required":false,
+                        "type":"string",
+                        "default":"{\"user_email\": \"vitaly.spirin@gmail.com\",\"user_firstname\": \"Vitaly\",\"user_lastname\": \"Spirin\",\"user_expectedcalories\": 2501}"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/User"
+                        }
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    },
+                    "403":{  
+                        "description":"Forbidden"
+                    },
+                    "404":{  
+                        "description":"Not Found"
+                    },
+                    "422":{  
+                        "description":"Data validation failed"
+                    }
+                }
+
+            },
+            "delete":{  
+                "tags": [ "user" ],
+                "summary":"Delete user with specified id",
+                "parameters":[
+                    {
+                        "name":"user_id",
+                        "in":"path",
+                        "description":"user_id of the user that will be deleted",
+                        "required":true,
+                        "type":"integer"
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user who has 'manager' role",
+                        "required":true,
+                        "type":"string",
+                        "default":"LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS"
+                    }
+                ],
+                "responses":{  
+                    "204":{  
+                        "description":"successful operation"
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    },
+                    "403":{  
+                        "description":"Forbidden"
+                    }
+                }
+            }
+
+        },
+        "/user/labels":{  
+            "get":{
+                "tags": [ "user" ],
+                "summary":"Return labels for user's properties"
+            }
+        },
+        "/user/labels":{  
+            "get":{
+                "tags": [ "user" ],
+                "summary":"Return labels for user's properties",
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/UserLabels"
+                        }
+                    }
+                }
+
+            }
+        },
+        "/user/roles":{  
+            "get":{
+                "tags": [ "user" ],
+                "summary":"Return possible values user's property user_role",
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/UserRoles"
+                        }
+                    }
+                }
+            }
+        },
+        
+        
+        "/calories":{  
+            "post":{  
+                "tags": [ "calories" ],
+                "summary":"Create new calories",
+                "parameters":[
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user to whom this calories belong to",
+                        "required":true,
+                        "type":"string",
+                        "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    },
+                    {
+                        "name":"body",
+                        "in":"body",
+                        "description":"calories properties",
+                        "required":false,
+                        "type":"string",
+                        "default":"{\"calories_datetime\": \"2016-04-06 09:01:01\",\"calories_text\": \"rice\",\"calories_number\": 1000, \"user_id\": 1}"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/User"
+                        }
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    },
+                    "422":{  
+                        "description":"Data validation failed"
+                    }
+                }
+
+            }
+        },
+        "/calories/{calories_id}":{  
+            "get":{
+                "tags": [ "calories" ],
+                "summary":"Return calories with specified id",
+                "parameters":[
+                    {
+                        "name":"calories_id",
+                        "in":"path",
+                        "description":"calories_id of the calories that will be retrieved",
+                        "required":true,
+                        "type":"integer",
+                        "default":1
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user to whom this calories belong to",
+                        "required":true,
+                        "type":"string",
+                        "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/Calories"
+                        },
+                    },
+                    "403":{  
+                        "description":"Forbidden"
+                    },
+                    "404":{  
+                        "description":"Not Found"
+                    }
+                }
+
+
+            },
+            "put":{
+                "tags": [ "calories" ],
+                "summary":"Update calories with specified id",
+                "parameters":[
+                    {
+                        "name":"calories_id",
+                        "in":"path",
+                        "description":"calories_id of the calories that will be updated",
+                        "required":true,
+                        "type":"integer",
+                        "default":1
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user to whom this calories belong to",
+                        "required":true,
+                        "type":"string",
+                        "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    },
+                    {
+                        "name":"body",
+                        "in":"body",
+                        "description":"calories properties",
+                        "required":false,
+                        "type":"string",
+                        "default":"{\"calories_datetime\": \"2016-04-06 09:01:01\",\"calories_text\": \"rice\",\"calories_number\": 1000, \"user_id\": 1}"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/Calories"
+                        },
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    },
+                    "404":{  
+                        "description":"Not Found"
+                    },
+                    "422":{  
+                        "description":"Data validation failed"
+                    }
+                }
+            },
+            "delete":{  
+                "tags": [ "calories" ],
+                "summary":"Delete calories with specified id",
+                "parameters":[
+                    {
+                        "name":"calories_id",
+                        "in":"path",
+                        "description":"calories_id of the calories that will be updated",
+                        "required":true,
+                        "type":"integer",
+                        "default":1
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user to whom this calories belong to",
+                        "required":true,
+                        "type":"string",
+                        "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    }
+                ],
+                "responses":{  
+                    "204":{  
+                        "description":"successful operation"
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    },
+                    "404":{  
+                        "description":"Not Found"
+                    }
+                }
+            }
+        },
+        "/calories/labels":{  
+            "get":{
+                "tags": [ "calories" ],
+                "summary":"Return labels for calories' properties",
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "$ref":"#/definitions/CaloriesLabels"
+                        }
+                    }
+                }
+
+            }
+        },
+        "/calories/user/{user_id}/search":{  
+            "get":{
+                "tags": [ "calories" ],
+                "summary":"Return calories based on filter params",
+                "parameters":[
+                    {
+                        "name":"user_id",
+                        "in":"path",
+                        "description":"user_id of the user for whom list of calories will be retrieved",
+                        "required":true,
+                        "type":"integer",
+                        "default":1
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user to whom this calories belong to",
+                        "required":true,
+                        "type":"string",
+                        "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "type":"array",
+                            "items":{  
+                                "$ref":"#/definitions/Calories"
+                            }
+                        }
+                    },
+                    "403":{  
+                        "description":"Forbidden"
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    }
+                }
+            }
+        }
+
+    },
+    
+    
+    "definitions":{  
+        "User":{  
+            "type":"object",
+            "properties":{  
+                "user_id":{  
+                    "type":"integer",
+                    "format":"int64"
+                },
+                "user_email":{
+                    "type":"string",
+                    "example":"dave.johnson@gmail.com"
+                },
+                "user_firstname":{
+                    "type":"string",
+                    "example":"Dave"
+                },
+                "user_lastname":{
+                    "type":"string",
+                    "example":"Johnson"
+                },
+                "user_accesstoken":{
+                    "type":"string",
+                    "example":"fdwqGSNpT4KgqrN59HhDmXA2L3m5VE8T"
+                },
+                "user_role":{
+                    "enum":[  
+                      "user",
+                      "manager",
+                      "admin"
+                    ]
+                },
+                "user_expectedcalories":{
+                    "type":"integer"
+                }
+            }
+        },
+
+        "UserLabels":{  
+            "type":"object",
+            "properties":{  
+                "user_id":{  
+                    "type":"string",
+                    "example":"User ID"
+                },
+                "user_email":{
+                    "type":"string",
+                    "example":"User Email"
+                },
+                "user_firstname":{
+                    "type":"string",
+                    "example":"User Firstname"
+                },
+                "user_lastname":{
+                    "type":"string",
+                    "example":"User Lastname"
+                },
+                "user_passwordhash":{
+                    "type":"string",
+                    "example":"User Passwordhash"
+                },
+                "user_accesstoken":{
+                    "type":"string",
+                    "example":"User Accesstoken"
+                },
+                "user_role":{
+                    "type":"string",
+                    "example":"User Role"
+                },
+                "user_expectedcalories":{
+                    "type":"string",
+                    "example":"User Expectedcalories"
+                }
+            }
+        },
+        
+        "UserRoles":{  
+            "type":"array",
+            "example":["user", "manager", "admin"]
+        },
+        
+
+        "Calories":{  
+            "type":"object",
+            "properties":{  
+                "calories_id":{  
+                    "type":"string",
+                    "example":"1"
+                },
+                "calories_datetime":{  
+                    "type":"string",
+                    "example":"2016-04-06 09:01:01"
+                },
+                "calories_text":{  
+                    "type":"string",
+                    "example":"rice"
+                },
+                "calories_number":{  
+                    "type":"string",
+                    "example":"1000"
+                },
+                "user_id":{  
+                    "type":"string",
+                    "example":"1"
+                }
+            }
+        },
+        
+        
+        "CaloriesLabels":{  
+            "type":"object",
+            "properties":{  
+                "calories_id":{  
+                    "type":"string",
+                    "example":"Calories ID"
+                },
+                "calories_datetime":{  
+                    "type":"string",
+                    "example":"Date and time"
+                },
+                "calories_text":{  
+                    "type":"string",
+                    "example":"Description"
+                },
+                "calories_number":{  
+                    "type":"string",
+                    "example":"Number of Calories"
+                },
+                "user_id":{  
+                    "type":"string",
+                    "example":"User ID"
+                }
+            }
+        }
+    }
+
+    
+}

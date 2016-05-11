@@ -1,0 +1,60 @@
+
+<div class="panel panel-success">
+	<div class="panel-heading">
+		<h3 class="panel-title" ng-show="action=='delete'">Confirm Deletion.</h3>
+		<h3 class="panel-title" ng-show="action=='read'">Review.</h3>
+	</div>
+	
+	<div class="panel-body">
+
+	    <div class="row">
+	        <div class="col-sm-3 text-right">
+	        	<strong>{{userLabelList.user_id}}</strong>
+	        </div>
+	        <div class="col-sm-9 text-left">&nbsp; {{user.user_id}}</div>
+		</div>
+		
+	    <div class="row">
+	        <div class="col-sm-3 text-right">
+	        	<strong>{{userLabelList.user_firstname}}</strong>
+	        </div>
+	        <div class="col-sm-9 text-left">&nbsp; {{user.user_firstname}}</div>
+		</div>
+
+	    <div class="row">
+	        <div class="col-sm-3 text-right">
+	        	<strong>{{userLabelList.user_lastname}}</strong>
+	        </div>
+	        <div class="col-sm-9 text-left">&nbsp; {{user.user_lastname}}</div>
+		</div>
+		
+	    <div class="row">
+	        <div class="col-sm-3 text-right">
+	        	<strong>{{userLabelList.user_role}}</strong>
+	        </div>
+	        <div class="col-sm-9 text-left">&nbsp; {{user.user_role}}</div>
+		</div>
+		
+	    <div class="row">
+	        <div class="col-sm-3 text-right">
+	        	<strong>{{userLabelList.user_expectedcalories}}</strong>
+	        </div>
+	        <div class="col-sm-9 text-left">&nbsp; {{user.user_expectedcalories}}</div>
+		</div>
+		
+	</div>
+
+</div>
+
+
+<button class="btn btn-lg btn-danger" ng-click="delete(calories.calories_id)" 
+	ng-show="action=='delete'">
+	Delete
+</button>
+
+<button class="btn btn-lg btn-primary" ng-click="cancel()">{{cancelButtonLabel}}</button>
+
+
+<div ng-show="error" class="alert alert-danger">
+    Error: {{errorMessage}}
+</div>
