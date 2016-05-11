@@ -1,7 +1,7 @@
 <?php
     $this->title = 'Swagger';
 ?>
-  <link href='/server/web/vendors/swagger-ui/dist/css/typography.css' media='screen' rel='stylesheet' type='text/css' property='stylesheet' />
+  <link href='vendors/swagger-ui/dist/css/typography.css' media='screen' rel='stylesheet' type='text/css' property='stylesheet' />
   <link href='/server/web/vendors/swagger-ui/dist/css/reset.css' media='screen' rel='stylesheet' type='text/css' property='stylesheet' />
   <link href='/server/web/vendors/swagger-ui/dist/css/screen.css' media='screen' rel='stylesheet' type='text/css' property='stylesheet' />
   <link href='/server/web/vendors/swagger-ui/dist/css/reset.css' media='print' rel='stylesheet' type='text/css' property='stylesheet' />
