@@ -1,12 +1,12 @@
 <?php
-
+//echo '<pre>';
 error_reporting(-1);
 ini_set('display_errors', 1);
 
 // for c3 (CodeCeption code coverage) =>
 define('C3_CODECOVERAGE_ERROR_LOG_FILE', '/../runtime/logs/c3_error.log'); //Optional (if not set the default c3 output dir will be used)
-require_once __DIR__ . '/../../../.composer/vendor/codeception/codeception/autoload.php';
-include __DIR__ . '/../tests/c3.php';
+require_once(__DIR__ . '/../vendor/codeception/codeception/autoload.php');
+include(__DIR__ . '/../tests/c3.php');
 
 if ( strpos($_SERVER['REQUEST_URI'], 'c3/report/clear') !== false ) exit;
 

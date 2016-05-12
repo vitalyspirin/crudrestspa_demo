@@ -7,7 +7,7 @@ use yii\web\UnauthorizedHttpException;
 use yii\web\UnprocessableEntityHttpException;
 
 
-require_once(__DIR__ . '/../vendor/SimpleActiveRecord/src/SimpleActiveRecord.php');
+require_once(__DIR__ . '/../vendor/vitalyspirin/yii2-simpleactiverecord/src/SimpleActiveRecord.php');
 
 
 class User extends \SimpleActiveRecord

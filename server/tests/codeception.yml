@@ -21,7 +21,7 @@ coverage:
             - ../web/*
             - ../tests/*
             - ../modules/v1/Module.php
-            - ../../../.composer/*
+#            - ../../../.composer/*
 paths:
     tests: codeception
     log: codeception/_output

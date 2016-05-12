@@ -32,17 +32,20 @@ class TestController extends Controller
     public function actionServer()
     {
         $codeCoverageUrl = Yii::$app->request->hostInfo;
-        //$codeCoverageUrl .= Yii::$app->request->baseUrl;
-        $codeCoverageUrl .= '/server/tests/codeception/_output/coverage';
-            
+        $codeCoverageUrl .= Yii::$app->request->baseUrl;
+        $codeCoverageUrl .= '/../tests/codeception/_output/coverage';
+
         if ( !isset($_POST['run']) ) {
             $result =  $this->render('server', ["codeCoverageUrl"=>$codeCoverageUrl]);
         } else {
             $this->overwriteCodeceptionBootstrapFile();
 
             $output = [];
-            
-            $command = "~/.composer/vendor/bin/codecept run api --config ../tests";
+
+            $command = __DIR__ . "/../vendor/bin/codecept";
+            $result = exec($command . ' clean --config ../tests', $output, $return_var);
+
+            $command .= " run api --config ../tests";
 
             if ( isset($_POST['codeCoverage']) ) {
                 $command .= " --coverage --coverage-html";
