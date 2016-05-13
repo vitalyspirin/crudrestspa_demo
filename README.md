@@ -14,6 +14,10 @@ composer install
 ```
 Folders "client" and "server" potentially can be on different hosts and therefore all server dependencies should be located inside "server/vendor" folder.
 
+Create database "crudrestspa_demo". In the file "crudrestspa_demo/server/config/db.php" check the login parameters.
+
+In the brower go to url: "/crudrestspa_demo/server/web". After that you can see client app by clicking on "Client app" link in the upper right corner.
+
 ## Client side
 
 Client app implements typical CRUD using Bootstrap template:
