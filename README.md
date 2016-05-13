@@ -16,7 +16,7 @@ Folders "client" and "server" potentially can be on different hosts and therefor
 
 Create database "crudrestspa_demo". In the file "crudrestspa_demo/server/config/db.php" check the login parameters.
 
-In the brower go to url: "/crudrestspa_demo/server/web". After that you can see client app by clicking on "Client app" link in the upper right corner.
+In the browser go to url: "/crudrestspa_demo/server/web". After that you can switch to client app by clicking on "Client app" link in the upper right corner.
 
 ## Client side
 
