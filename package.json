@@ -1,0 +1,14 @@
+
+{
+  "name": "vitalyspirin/crudrestspa_demo",
+  "version": "1.0.0",
+  "description": "Demo of CRUD/REST/SPA using Yii2, AngularJS, SwaggerUI, Codeception.",
+  "author": "Vitaly Spirin <vitaly.spirin@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitalyspirin/crudrestspa_demo"
+  },
+
+  "keywords": ["CRUD","REST", "SPA", "demo", "PHP", "Yii2", "AngularJS"],
+}
+  
