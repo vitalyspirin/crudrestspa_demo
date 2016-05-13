@@ -2,16 +2,7 @@
 namespace app\controllers;
 
 use Yii;
-//use yii\filters\AccessControl;
 use yii\web\Controller;
-//use yii\filters\VerbFilter;
-//use app\models\LoginForm;
-//use app\models\ContactForm;
-
-//use app\models\User;
-
-//require __DIR__ . '/../tests/RESTtests.php';
-
 
 
 class TestController extends Controller
@@ -69,11 +60,8 @@ class TestController extends Controller
             ]);
 
         }
-
-//echo '<pre>';var_dump($output); var_dump($return_var); exit;
         
         return $result;
-        //return $this->renderFile(__DIR__ . '/../tests/codeception/_output/report.html');
     }
     
 
@@ -81,6 +69,7 @@ class TestController extends Controller
     {
         return $this->renderFile(__DIR__ . '/../tests/codeception/_output/report.html');
     }
+    
     
     public function actionManual()
     {

@@ -41,7 +41,8 @@ AppAsset::register($this);
 //            ['label' => 'Manual tests', 'url' => ['/test/manual']],
             ['label' => 'Server tests', 'url' => ['/test/server']],
             ['label' => 'e2e tests', 'url' => ['/test/e2e']],
-            ['label' => 'Client app', 'url' => '../../client'],
+            ['label' => 'Client app', 'url' => 
+                Yii::$app->request->baseUrl . '/../../client'],
 
         ],
     ]);
