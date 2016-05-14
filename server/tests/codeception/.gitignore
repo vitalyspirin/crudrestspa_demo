@@ -2,3 +2,6 @@
 /unit/UnitTester.php
 /functional/FunctionalTester.php
 /acceptance/AcceptanceTester.php
+
+# this file is overwritten in TestController.php
+/api/_bootstrap.php
