@@ -16,7 +16,17 @@ Folders "client" and "server" potentially can be on different hosts and therefor
 
 Create database "crudrestspa_demo". In the file "crudrestspa_demo/server/config/db.php" check the login parameters.
 
-In the browser go to url: "/crudrestspa_demo/server/web". After that you can switch to client app by clicking on "Client app" link in the upper right corner.
+In the browser go to url: "/crudrestspa_demo/server/web". In the menu click on "Restore Database". 
+
+
+## Swagger UI
+
+Shows end points of RESTful interface.
+
+![swagger.png](/docs/swagger.png "swagger")
+
+To switch to client app click on "Client app" link in the upper right corner.
+
 
 ## Client side
 
@@ -25,11 +35,6 @@ Client app implements typical CRUD using Bootstrap template:
 ![client_index.png](/docs/client_index.png "client index")
 
 
-## Swagger UI
-
-Shows end points of RESTful interface.
-
-![swagger.png](/docs/swagger.png "swagger")
 
 
 ## Server tests
