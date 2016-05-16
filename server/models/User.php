@@ -6,11 +6,10 @@ use Yii;
 use yii\web\UnauthorizedHttpException;
 use yii\web\UnprocessableEntityHttpException;
 
+use vitalyspirin\yii2\simpleactiverecord\SimpleActiveRecord;
 
-require_once(__DIR__ . '/../vendor/vitalyspirin/yii2-simpleactiverecord/src/SimpleActiveRecord.php');
 
-
-class User extends \SimpleActiveRecord
+class User extends SimpleActiveRecord
 {
     const USER_EMAIL_DOESNOT_EXIST = 'User email does not exist.';
     const WRONG_PASSWORD = 'Wrong password';

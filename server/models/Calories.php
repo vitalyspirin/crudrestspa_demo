@@ -2,10 +2,10 @@
 
 namespace app\models;
 
-require_once(__DIR__ . '/../vendor/SimpleActiveRecord/src/SimpleActiveRecord.php');
+use vitalyspirin\yii2\simpleactiverecord\SimpleActiveRecord;
 
 
-class Calories extends \SimpleActiveRecord
+class Calories extends SimpleActiveRecord
 {
     
     public function attributeLabels()

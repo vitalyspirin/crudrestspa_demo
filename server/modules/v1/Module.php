@@ -21,5 +21,9 @@ class Module extends \yii\base\Module
 
         // custom initialization code goes here
         \Yii::$app->user->enableSession = false; // added by Vitaly
+
+error_reporting(-1);
+ini_set('display_errors', 1);
+
     }
 }
