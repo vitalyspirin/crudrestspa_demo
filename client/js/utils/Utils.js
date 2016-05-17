@@ -30,6 +30,15 @@ var Utils =
         return d.getFullYear()+'-'
           + pad(d.getMonth()+1)+'-'
           + pad(d.getDate());
+    },
+    
+    
+    getJSDateFromMySQLDateTime: function(datetimeStr)
+    {
+        var newDateTimeStr = datetimeStr.replace(/-/g, '/');
+        var result = new Date(newDateTimeStr);
+        
+        return result;
     }
     
     

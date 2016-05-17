@@ -60,10 +60,13 @@ function CaloriesIndexController($scope, $http, $location, $routeParams, $rootSc
             $scope.caloriesList = caloriesList;
             
             if (caloriesList.length > 0) {
-                var dateTimeFrom = new Date(caloriesList[0].calories_datetime);
+                var dateTimeFrom = 
+                    Utils.getJSDateFromMySQLDateTime(caloriesList[0].calories_datetime);
                 $scope.filterParams.fromDate = Utils.getDateFromJSDateTime(dateTimeFrom);
                 
-                var dateTimeTo = new Date(caloriesList[caloriesList.length - 1].calories_datetime);
+                //var dateTimeTo = new Date(caloriesList[caloriesList.length - 1].calories_datetime);
+                var dateTimeTo = Utils.getJSDateFromMySQLDateTime(
+                    caloriesList[caloriesList.length - 1].calories_datetime);
                 $scope.filterParams.toDate = Utils.getDateFromJSDateTime(dateTimeTo);
             }
                     
