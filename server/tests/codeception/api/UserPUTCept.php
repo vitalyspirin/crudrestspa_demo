@@ -27,6 +27,25 @@ $I->seeResponseContains('Forbidden');
 $I->seeResponseContains('Access denied');
 
 
+$I->sendPUT(URL . '/users/30?user_accesstoken=LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS', [
+    'user_expectedcalories'=>"test rice"
+]);
+
+$I->seeResponseCodeIs(404);
+$I->seeResponseIsJson();
+$I->seeResponseContains('Not Found');
+
+
+
+$I->sendPUT(URL . '/users/3?user_accesstoken=LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS', [
+    'user_expectedcalories'=>"test rice"
+]);
+
+$I->seeResponseCodeIs(422);
+$I->seeResponseIsJson();
+$I->seeResponseContains('must be a number');
+
+
 $user_expectedcalories = time() % 1000;
 $I->sendPUT(URL . '/users/3?user_accesstoken=LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS', [
     'user_expectedcalories'=>$user_expectedcalories

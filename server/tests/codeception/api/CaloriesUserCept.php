@@ -2,6 +2,8 @@
 
 $I = new ApiTester($scenario);
 $I->wantTo('test GET /calories/user/{user_id}');
+
+
 $I->sendGET(URL . '/calories/user/1');
 
 $I->seeResponseCodeIs(401);

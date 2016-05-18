@@ -2,6 +2,16 @@
 
 $I = new ApiTester($scenario);
 $I->wantTo('test GET /calories/{calories_id}');
+
+
+$I->sendGET(URL . '/calories/30');
+
+$I->seeResponseCodeIs(404);
+$I->seeResponseContains('Not Found');
+$I->seeResponseContains('Object not found');
+
+
+
 $I->sendGET(URL . '/calories/1');
 
 $I->seeResponseCodeIs(401);
