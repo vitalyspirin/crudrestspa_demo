@@ -483,6 +483,38 @@
                         "required":true,
                         "type":"string",
                         "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    },
+                    {
+                        "name":"fromDate",
+                        "in":"query",
+                        "description":"start date of search range",
+                        "required":true,
+                        "type":"string",
+                        "default":"2016-04-06"
+                    },
+                    {
+                        "name":"toDate",
+                        "in":"query",
+                        "description":"end date of search range",
+                        "required":true,
+                        "type":"string",
+                        "default":"2016-04-07"
+                    },
+                    {
+                        "name":"fromTime",
+                        "in":"query",
+                        "description":"start time of the day (for every day, not only starting date) of search range",
+                        "required":true,
+                        "type":"string",
+                        "default":"09:00"
+                    },
+                    {
+                        "name":"toTime",
+                        "in":"query",
+                        "description":"end time of the day (for every day, not only starting date) of search range",
+                        "required":true,
+                        "type":"string",
+                        "default":"21:00"
                     }
                 ],
                 "responses":{  
