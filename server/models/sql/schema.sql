@@ -63,13 +63,13 @@ INSERT INTO user(user_email, user_firstname, user_lastname, user_role, user_pass
     'LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS');
 
 
-SET @ID = LAST_INSERT_ID();
-
-INSERT INTO calories(calories_datetime, calories_text, calories_number, user_id) 
-    VALUES('2016-04-01 19:01:01', 'orange', 1000, @ID);
-
 
 INSERT INTO user(user_email, user_firstname, user_lastname, user_role, user_passwordhash,
     user_accesstoken) VALUES('david.black@gmail.com', 'David', 'Black', 'user',
     '$2y$13$NMDM5OJPGaTjFNOL2DIFiOrgssS5bL4KVeRpmhBHIQqsU/OeT.KBm',
     '7GFXdHAV3Yo7XpUIb3bmGp-PhNbLvy04');
+
+SET @ID = LAST_INSERT_ID();
+
+INSERT INTO calories(calories_datetime, calories_text, calories_number, user_id) 
+    VALUES('2016-04-01 19:01:01', 'orange', 1000, @ID);

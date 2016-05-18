@@ -13,7 +13,7 @@ use yii\web\ForbiddenHttpException;
 use yii\web\UnauthorizedHttpException;
 
 
-class CaloriesController extends ActiveController
+class CaloriesController extends MyActiveController
 {
     public $modelClass = 'app\models\Calories';
     
@@ -33,26 +33,37 @@ class CaloriesController extends ActiveController
     public function checkAccess($action, $model = null, $params = [])
     {
         if ( !isset($_REQUEST['user_accesstoken']) ) {
-            throw new UnauthorizedHttpException(UserController::ACCESS_TOKEN_IS_MISSING);
+            throw new UnauthorizedHttpException(self::ACCESS_TOKEN_IS_MISSING);
         }
         
         $userAccessToken = $_REQUEST['user_accesstoken'];
         $currentUser = User::findOne(['user_accesstoken'=>$userAccessToken]);
 
         if ($currentUser == null) {
-            throw new UnauthorizedHttpException(UserController::ACCESS_TOKEN_IS_INVALID);
+            throw new UnauthorizedHttpException(self::ACCESS_TOKEN_IS_INVALID);
         }
 
 
         switch (Yii::$app->controller->action->id) {
             case 'view':
+            case 'update':
+            case 'delete':
+                            $calories = Calories::findOne($this->actionParams['id']);
+                            if ($currentUser == null || (
+                                $calories->user_id != $currentUser->user_id 
+                                && $currentUser->user_role == User::REGULAR_USER) 
+                            )
+                            {
+                                throw new ForbiddenHttpException(User::ACCESS_DENIED);
+                            }
+                            break;
             case 'search':
             case 'user' :   if ($currentUser == null || (
                                 $this->actionParams['id'] != $currentUser->user_id 
                                 && $currentUser->user_role == User::REGULAR_USER) 
                             )
                             {
-                                throw new ForbiddenHttpException();
+                                throw new ForbiddenHttpException(User::ACCESS_DENIED);
                             }
         }
 

@@ -14,25 +14,22 @@ use yii\web\UnauthorizedHttpException;
 use yii\web\BadRequestHttpException;
 
 
-class UserController extends ActiveController
+class UserController extends MyActiveController
 {
-    const ACCESS_TOKEN_IS_MISSING = 'Access token must be specified.';
-    const ACCESS_TOKEN_IS_INVALID = 'Access token is invalid.';
-    
     public $modelClass = 'app\models\User';
 
     
     public function checkAccess($action, $model = null, $params = [])
     {
         if ( !isset($_REQUEST['user_accesstoken']) ) {
-            throw new UnauthorizedHttpException(UserController::ACCESS_TOKEN_IS_MISSING);
+            throw new UnauthorizedHttpException(self::ACCESS_TOKEN_IS_MISSING);
         }
         
         $userAccessToken = $_REQUEST['user_accesstoken'];
         $currentUser = User::findOne(['user_accesstoken'=>$userAccessToken]);
 
         if ($currentUser == null) {
-            throw new UnauthorizedHttpException(UserController::ACCESS_TOKEN_IS_INVALID);
+            throw new UnauthorizedHttpException(self::ACCESS_TOKEN_IS_INVALID);
         }
 
         if  ( 

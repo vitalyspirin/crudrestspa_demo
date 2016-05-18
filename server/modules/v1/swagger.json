@@ -5,7 +5,7 @@
       "version":"1.0.0",
       "title":"REST API for CRUD/REST/SPA demo"
     },
-    "basePath":"/server/web/v1",
+    "basePath":"/crudrestspa_demo/server/web/v1",
     "consumes":[ "application/json" ],
     "produces":[ "application/json" ],
     "schemes":[ "https" ],
@@ -421,6 +421,48 @@
 
             }
         },
+        "/calories/user/{user_id}":{  
+            "get":{
+                "tags": [ "calories" ],
+                "summary":"Return calories for user with specified id",
+                "parameters":[
+                    {
+                        "name":"user_id",
+                        "in":"path",
+                        "description":"user_id of the user for whom list of calories will be retrieved",
+                        "required":true,
+                        "type":"integer",
+                        "default":1
+                    },
+                    {
+                        "name":"user_accesstoken",
+                        "in":"query",
+                        "description":"Access token of a user to whom this calories belong to",
+                        "required":true,
+                        "type":"string",
+                        "default":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"
+                    }
+                ],
+                "responses":{  
+                    "200":{  
+                        "description":"successful operation",
+                        "schema":{  
+                            "type":"array",
+                            "items":{  
+                                "$ref":"#/definitions/Calories"
+                            }
+                        }
+                    },
+                    "403":{  
+                        "description":"Forbidden"
+                    },
+                    "401":{  
+                        "description":"Unauthorized"
+                    }
+                }
+            }
+        },
+        
         "/calories/user/{user_id}/search":{  
             "get":{
                 "tags": [ "calories" ],
