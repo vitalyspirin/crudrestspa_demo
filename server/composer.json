@@ -29,7 +29,8 @@
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*",
         
-        "codeception/c3": "2.*"
+        "codeception/c3": "2.*",
+        "friendsofphp/php-cs-fixer": "^1.11"
     },
     "config": {
         "process-timeout": 1800
@@ -56,5 +57,11 @@
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
+    },
+    "scripts": {
+        "fix": "vendor/bin/php-cs-fixer fix -v --level=psr2 --fixers=single_quote,new_with_braces,operators_spaces,phpdoc_short_description,phpdoc_separation,return,concat_with_spaces,spaces_before_semicolon,multiline_spaces_before_semicolon,unused_use,ordered_use,whitespacy_lines .",
+        "test": "vendor/bin/codecept run api --config tests",
+        "test2": "vendor/bin/codecept run api --config tests --coverage --coverage-html"
     }
+
 }
