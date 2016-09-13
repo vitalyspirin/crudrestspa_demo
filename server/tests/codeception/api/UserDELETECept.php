@@ -12,9 +12,9 @@ $I->seeResponseContains('Object not found');
 
 
 $I->sendPOST(URL . '/users', [
-    'user_email'=>'testuser' . time() . '@gmail.com',
-    'user_firstname'=>'Test',
-    'user_lastname'=>'Test',
+    'user_email' => 'testuser' . time() . '@gmail.com',
+    'user_firstname' => 'Test',
+    'user_lastname' => 'Test',
 //    'user_password'=>'test'
 ]);
 $I->seeResponseCodeIs(200);

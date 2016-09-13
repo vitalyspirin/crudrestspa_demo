@@ -5,7 +5,8 @@ namespace tests\codeception\_pages;
 use yii\codeception\BasePage;
 
 /**
- * Represents contact page
+ * Represents contact page.
+ *
  * @property \AcceptanceTester|\FunctionalTester $actor
  */
 class ContactPage extends BasePage

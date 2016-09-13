@@ -2,10 +2,10 @@
 
 namespace tests\codeception\unit\models;
 
-use Yii;
-use yii\codeception\TestCase;
 use app\models\LoginForm;
 use Codeception\Specify;
+use Yii;
+use yii\codeception\TestCase;
 
 class LoginFormTest extends TestCase
 {
@@ -57,5 +57,4 @@ class LoginFormTest extends TestCase
             expect('user should be logged in', Yii::$app->user->isGuest)->false();
         });
     }
-
 }

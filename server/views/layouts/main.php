@@ -3,11 +3,11 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\helpers\Html;
+use app\assets\AppAsset;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
 
 AppAsset::register($this);
 ?>
@@ -41,7 +41,7 @@ AppAsset::register($this);
 //            ['label' => 'Manual tests', 'url' => ['/test/manual']],
             ['label' => 'Server tests', 'url' => ['/test/server']],
             ['label' => 'e2e tests', 'url' => ['/test/e2e']],
-            ['label' => 'Client app', 'url' => 
+            ['label' => 'Client app', 'url' =>
                 Yii::$app->request->baseUrl . '/../../client'],
 
         ],

@@ -9,7 +9,9 @@ define('C3_CODECOVERAGE_ERROR_LOG_FILE', '/../runtime/logs/c3_error.log'); //Opt
 require_once(__DIR__ . '/../vendor/codeception/codeception/autoload.php');
 include(__DIR__ . '/../tests/c3.php');
 
-if ( strpos($_SERVER['REQUEST_URI'], 'c3/report/clear') !== false ) exit;
+if (strpos($_SERVER['REQUEST_URI'], 'c3/report/clear') !== false) {
+    exit;
+}
 // for c3 (CodeCeption code coverage) <=
 
 

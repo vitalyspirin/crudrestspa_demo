@@ -40,7 +40,7 @@ $I->seeResponseContains('Access denied');
 
 
 $I->sendPUT(URL . '/calories/1?user_accesstoken=PEp982aMnzjjTFqItf8ORva0J9LgWGBt', [
-    'calories_number'=>"test rice"
+    'calories_number' => 'test rice'
 ]);
 
 $I->seeResponseCodeIs(422);
@@ -50,7 +50,7 @@ $I->seeResponseContains('must be a number');
 
 $calories_number = time() % 1000;
 $I->sendPUT(URL . '/calories/1?user_accesstoken=PEp982aMnzjjTFqItf8ORva0J9LgWGBt', [
-    'calories_number'=>$calories_number
+    'calories_number' => $calories_number
 ]);
 
 $I->seeResponseCodeIs(200);
@@ -59,7 +59,7 @@ $I->seeResponseContains('"calories_number":' . $calories_number);
 
 $calories_number += 1;
 $I->sendPUT(URL . '/calories/1?user_accesstoken=PEp982aMnzjjTFqItf8ORva0J9LgWGBt', [
-    'calories_number'=>$calories_number
+    'calories_number' => $calories_number
 ]);
 
 $I->seeResponseCodeIs(200);

@@ -3,7 +3,8 @@
 // added by Vitaly =>
 // removing /web from url
 use \yii\web\Request;
-$baseUrl = str_replace('/web', '', (new Request)->getBaseUrl());
+
+$baseUrl = str_replace('/web', '', (new Request())->getBaseUrl());
 // added by Vitaly <=
 
 $params = require(__DIR__ . '/params.php');
@@ -17,7 +18,7 @@ $config = [
         ],
     ],
     // added by Vitaly <=
-    
+
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -25,7 +26,7 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'WsVQR1dYasl6oyv38DhJXHzoSrOMSKow',
-            
+
             // added by Vitaly =>
             //'baseUrl' => $baseUrl, // to remove /web/ from url
             'parsers' => [
@@ -66,12 +67,12 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 [
-                    'class' => 'yii\rest\UrlRule', 
+                    'class' => 'yii\rest\UrlRule',
                     'controller' => ['v1/user'],
                 ],
-                
+
                 [
-                    'class' => 'yii\rest\UrlRule', 
+                    'class' => 'yii\rest\UrlRule',
                     'controller' => ['v1/calories'],
                     'extraPatterns' => [
                         'GET user/{id}' => 'user',
@@ -79,7 +80,7 @@ $config = [
                     ],
                 ],
                 [
-                    'class' => 'yii\rest\UrlRule', 
+                    'class' => 'yii\rest\UrlRule',
                     'controller' => ['v1/swagger'],
                 ],
 

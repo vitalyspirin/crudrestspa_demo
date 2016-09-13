@@ -7,4 +7,3 @@ $I->seeResponseCodeIs(200);
 $I->seeResponseIsJson();
 $I->seeResponseContains('user');
 $I->seeResponseContains('manager');
-

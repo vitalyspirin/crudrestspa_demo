@@ -12,8 +12,8 @@ $I->seeResponseContains('user_firstname');
 
 
 $I->sendPOST(URL . '/users', [
-    "user_email"=> "vitaly.spirin@gmail.comm",
-    "user_password"=> "vitaly"
+    'user_email' => 'vitaly.spirin@gmail.comm',
+    'user_password' => 'vitaly'
 ]);
 
 $I->seeResponseCodeIs(401);
@@ -24,8 +24,8 @@ $I->seeResponseContains('User email does not exist');
 
 
 $I->sendPOST(URL . '/users', [
-    "user_email"=> "vitaly.spirin@gmail.com",
-    "user_password"=> "abc"
+    'user_email' => 'vitaly.spirin@gmail.com',
+    'user_password' => 'abc'
 ]);
 
 $I->seeResponseCodeIs(401);
@@ -36,8 +36,8 @@ $I->seeResponseContains('Wrong password');
 
 
 $I->sendPOST(URL . '/users', [
-    "user_email"=> "vitaly.spirin@gmail.com",
-    "user_password"=> "vitaly"
+    'user_email' => 'vitaly.spirin@gmail.com',
+    'user_password' => 'vitaly'
 ]);
 
 $I->seeResponseCodeIs(200);
@@ -48,12 +48,11 @@ $I->seeResponseContains('"user_accesstoken":"PEp982aMnzjjTFqItf8ORva0J9LgWGBt"')
 
 
 $I->sendPOST(URL . '/users', [
-    "user_firstname"=> "Vitaly",
-    "user_role"=> "user"
+    'user_firstname' => 'Vitaly',
+    'user_role' => 'user'
 ]);
 
 $I->seeResponseCodeIs(422);
 $I->seeResponseIsJson();
 $I->seeResponseContains('Unprocessable entity');
 $I->seeResponseContains('User Email cannot be blank');
-

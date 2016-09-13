@@ -3,7 +3,7 @@
 // @codeCoverageIgnoreStart
 
 /**
- * C3 - Codeception Code Coverage
+ * C3 - Codeception Code Coverage.
  *
  * @author tiger
  */
@@ -20,9 +20,9 @@ if (isset($_COOKIE['CODECEPTION_CODECOVERAGE'])) {
         $cookie = json_decode($cookie, true);
     }
 
-    if ($cookie) {    
+    if ($cookie) {
         foreach ($cookie as $key => $value) {
-            $_SERVER["HTTP_X_CODECEPTION_".strtoupper($key)] = $value;
+            $_SERVER['HTTP_X_CODECEPTION_' . strtoupper($key)] = $value;
         }
     }
 }
@@ -39,7 +39,7 @@ if (!function_exists('__c3_error')) {
             C3_CODECOVERAGE_MEDIATE_STORAGE . DIRECTORY_SEPARATOR . 'error.txt';
         if (is_writable($errorLogFile)) {
             file_put_contents($errorLogFile, $message);
-        }else{
+        } else {
             $message = "Could not write error to log file ($errorLogFile), original message: $message";
         }
         if (!headers_sent()) {
@@ -52,7 +52,7 @@ if (!function_exists('__c3_error')) {
 // Autoload Codeception classes
 if (!class_exists('\\Codeception\\Codecept')) {
     if (file_exists(__DIR__ . '/codecept.phar')) {
-        require_once 'phar://'.__DIR__ . '/codecept.phar/autoload.php';
+        require_once 'phar://' . __DIR__ . '/codecept.phar/autoload.php';
     } elseif (stream_resolve_include_path(__DIR__ . '/vendor/autoload.php')) {
         require_once __DIR__ . '/vendor/autoload.php';
         // Required to load some methods only available at codeception/autoload.php
@@ -150,6 +150,7 @@ if (!defined('C3_CODECOVERAGE_MEDIATE_STORAGE')) {
 
     /**
      * @param $filename
+     *
      * @return null|PHP_CodeCoverage
      */
     function __c3_factory($filename)
@@ -183,10 +184,11 @@ if (!defined('C3_CODECOVERAGE_MEDIATE_STORAGE')) {
 
     function __c3_exit()
     {
-//echo '<pre>';var_dump($_SERVER['HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG']);exit;
+        //echo '<pre>';var_dump($_SERVER['HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG']);exit;
         if (!isset($_SERVER['HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG'])) {
             exit;
         }
+
         return null;
     }
 
@@ -215,6 +217,7 @@ if ($requested_c3_report) {
 
     if ($route == 'clear') {
         __c3_clear();
+
         return __c3_exit();
     }
 
@@ -227,6 +230,7 @@ if ($requested_c3_report) {
             } catch (Exception $e) {
                 __c3_error($e->getMessage());
             }
+
             return __c3_exit();
         case 'clover':
             try {
@@ -234,6 +238,7 @@ if ($requested_c3_report) {
             } catch (Exception $e) {
                 __c3_error($e->getMessage());
             }
+
             return __c3_exit();
         case 'serialized':
             try {
@@ -241,19 +246,18 @@ if ($requested_c3_report) {
             } catch (Exception $e) {
                 __c3_error($e->getMessage());
             }
+
             return __c3_exit();
     }
-
 } else {
     $codeCoverage = __c3_factory($current_report);
     $codeCoverage->start(C3_CODECOVERAGE_TESTNAME);
-    if (!array_key_exists('HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG', $_SERVER)) { 
+    if (!array_key_exists('HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG', $_SERVER)) {
         register_shutdown_function(
             function () use ($codeCoverage, $current_report) {
-
                 $codeCoverage->stop();
                 if (!file_exists(dirname($current_report))) { // verify directory exists
-                    if(!mkdir(dirname($current_report), 0777, true)){
+                    if (!mkdir(dirname($current_report), 0777, true)) {
                         __c3_error("Can't write CodeCoverage report into $current_report");
                     }
                 }

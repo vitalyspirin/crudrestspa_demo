@@ -4,10 +4,8 @@ namespace app\models;
 
 use vitalyspirin\yii2\simpleactiverecord\SimpleActiveRecord;
 
-
 class Calories extends SimpleActiveRecord
 {
-    
     public function attributeLabels()
     {
         return [
@@ -18,6 +16,4 @@ class Calories extends SimpleActiveRecord
             'user_id' => 'User ID',
         ];
     }
-
 }
-

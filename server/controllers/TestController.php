@@ -1,15 +1,14 @@
 <?php
 namespace app\controllers;
 
+use app\models\utils\FileWriter;
 use Yii;
 use yii\web\Controller;
-use app\models\utils\FileWriter;
-
 
 class TestController extends Controller
 {
     public $enableCsrfValidation = false;
-    
+
     public function actionDatabase()
     {
         $sqlFile = file_get_contents(__DIR__ . '/../models/sql/schema.sql');
@@ -27,45 +26,44 @@ class TestController extends Controller
         $codeCoverageUrl .= Yii::$app->request->baseUrl;
         $codeCoverageUrl .= '/../tests/codeception/_output/coverage';
 
-        if ( !isset($_POST['run']) ) {
-            $result =  $this->render('server', ["codeCoverageUrl"=>$codeCoverageUrl]);
+        if (!isset($_POST['run'])) {
+            $result =  $this->render('server', ['codeCoverageUrl' => $codeCoverageUrl]);
         } else {
             FileWriter::overwriteCodeceptionBootstrapFile();
             FileWriter::overwriteApiSuiteYmlFile();
 
             $output = [];
 
-            $command = __DIR__ . "/../vendor/bin/codecept";
+            $command = __DIR__ . '/../vendor/bin/codecept';
             $result = exec($command . ' clean --config ../tests', $output, $return_var);
 
             $command .= ' run api --config ' . __DIR__ . '/../tests';
 
-            if ( isset($_POST['codeCoverage']) ) {
-                $command .= " --coverage --coverage-html";
+            if (isset($_POST['codeCoverage'])) {
+                $command .= ' --coverage --coverage-html';
             }
-            
-            if ( isset($_POST['debug']) ) {
-                $command .= " --debug";
+
+            if (isset($_POST['debug'])) {
+                $command .= ' --debug';
                 $htmlFilePath = false;
             } else {
-                $command .= " --html";
+                $command .= ' --html';
                 $htmlFilePath = __DIR__ . '/../tests/codeception/_output/report.html';
             }
-            
+
             $result = exec($command, $output, $return_var);
 
             $result = $this->render('server', [
-                "output"=>$output, 
-                "return_var"=>$return_var,
-                "htmlFilePath"=>$htmlFilePath,
-                "codeCoverageUrl"=>$codeCoverageUrl
+                'output' => $output,
+                'return_var' => $return_var,
+                'htmlFilePath' => $htmlFilePath,
+                'codeCoverageUrl' => $codeCoverageUrl
             ]);
-
         }
-        
+
         return $result;
     }
-    
+
 
     public function actionReport()
     {
@@ -83,6 +81,4 @@ class TestController extends Controller
     {
         echo 'Not implemented yet.';
     }
-    
-    
 }

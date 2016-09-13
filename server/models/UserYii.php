@@ -2,8 +2,6 @@
 
 namespace app\models;
 
-use Yii;
-
 /**
  * This is the model class for table "user".
  *
@@ -15,7 +13,6 @@ use Yii;
  * @property string $user_accesstoken
  * @property string $user_role
  * @property double $user_expectedcalories
- *
  * @property Calories[] $calories
  */
 class UserYii extends \yii\db\ActiveRecord

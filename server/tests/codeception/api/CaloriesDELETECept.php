@@ -12,11 +12,11 @@ $I->seeResponseContains('Object not found');
 
 $dateTime = new DateTime();
 $I->sendPOST(URL . '/calories', [
-    'calories_datetime'=>$dateTime->format('Y-m-d H:i:s'),
-    'calories_text'=>'test powder',
-    'calories_number'=>'100',
-    'user_id'=>1,
-    'user_accesstoken'=>'LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS'
+    'calories_datetime' => $dateTime->format('Y-m-d H:i:s'),
+    'calories_text' => 'test powder',
+    'calories_number' => '100',
+    'user_id' => 1,
+    'user_accesstoken' => 'LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS'
 ]);
 $I->seeResponseCodeIs(201);
 $calories_id = json_decode($I->grabResponse())->calories_id;

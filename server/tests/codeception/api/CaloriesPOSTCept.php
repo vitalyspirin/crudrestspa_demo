@@ -12,7 +12,7 @@ $I->seeResponseContains('Access token must be specified');
 
 
 
-$I->sendPOST(URL . '/calories', ["user_accesstoken"=> 1]);
+$I->sendPOST(URL . '/calories', ['user_accesstoken' => 1]);
 
 $I->seeResponseCodeIs(401);
 $I->seeResponseIsJson();
@@ -22,9 +22,9 @@ $I->seeResponseContains('Access token is invalid');
 
 
 $I->sendPOST(URL . '/calories', [
-    'calories_number'=>'100',
-    'user_id'=>1,
-    'user_accesstoken'=>'LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS'
+    'calories_number' => '100',
+    'user_id' => 1,
+    'user_accesstoken' => 'LOnYG6a2BkWIgyjGZjVQqC7AtbP_IIlS'
 ]);
 
 $I->seeResponseCodeIs(422);

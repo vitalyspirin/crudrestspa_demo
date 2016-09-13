@@ -3,7 +3,7 @@
 namespace app\modules\v1;
 
 /**
- * v1 module definition class
+ * v1 module definition class.
  */
 class Module extends \yii\base\Module
 {
@@ -23,7 +23,6 @@ class Module extends \yii\base\Module
         \Yii::$app->user->enableSession = false; // added by Vitaly
 
 error_reporting(-1);
-ini_set('display_errors', 1);
-
+        ini_set('display_errors', 1);
     }
 }

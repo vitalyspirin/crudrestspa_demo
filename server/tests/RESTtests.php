@@ -6,14 +6,13 @@
     require_once('APIURL.php');
 
 
-    class RESTtests extends WebTestCase 
+    class RESTtests extends WebTestCase
     {
         protected $user_accesstoken;
-        
-        
-        function testUserLabels() 
-        {
 
+
+        public function testUserLabels()
+        {
             $url = APIURL::getUserLabelsUrl();
 
             $result = $this->get($url);
@@ -24,7 +23,7 @@
         }
 
 
-        function testLogin()
+        public function testLogin()
         {
             $url = APIURL::getUserUrl();
 
@@ -34,15 +33,15 @@
                 ]
             );
             $this->assertResponse(200);
-            
+
             $resultObj = json_decode($result);
 
-            $this->assertTrue( isset($resultObj->user_accesstoken) );
+            $this->assertTrue(isset($resultObj->user_accesstoken));
             $this->user_accesstoken = $resultObj->user_accesstoken;
         }
 
 
-        function testUser()
+        public function testUser()
         {
             $url = APIURL::getUserUrl();
 
@@ -52,7 +51,7 @@
             $url = $url . '?user_accesstoken=' . $this->user_accesstoken;
             $result = $this->get($url);
             $this->assertResponse(200);
-            
+
             $this->assertText('user_firstname');
             $resultObj = json_decode($result);
             $this->assertTrue(is_array($resultObj));
@@ -60,13 +59,13 @@
         }
 
 
-        function testCalories()
+        public function testCalories()
         {
             $url = APIURL::getCaloriesUrl(1);
 
             $result = $this->get($url);
             $this->assertResponse(401);
-            
+
             $result = $this->get($url . '?user_accesstoken=' . $this->user_accesstoken);
             $this->assertResponse(200);
 
@@ -74,5 +73,4 @@
             $resultArr = json_decode($result);
             $this->assertTrue(is_array($resultArr));
         }
-        
     }
